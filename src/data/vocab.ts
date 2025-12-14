@@ -28,378 +28,260 @@ export const CATEGORIES = [
 
 export const VOCAB_ITEMS: VocabItem[] = [
     // --- FOOD (JAUSE) ---
-    {
-        id: 'apple', categoryId: 'food', image: '/assets/apple.webp', emoji: '🍎',
-        translations: { de: 'Apfel', pinz: 'Oapfi', en: 'Apple', it: 'Mela', fr: 'Pomme', tr: 'Elma', es: 'Manzana', 'ar-sy': 'Tuffāḥa', zh: 'Píngguǒ' }
-    },
-    {
-        id: 'banana', categoryId: 'food', image: '/assets/banana.webp', emoji: '🍌',
-        translations: { de: 'Banane', pinz: 'Banane', en: 'Banana', it: 'Banana', fr: 'Banane', tr: 'Muz', es: 'Plátano', 'ar-sy': 'Mawz', zh: 'Xiāngjiāo' }
-    },
-    {
-        id: 'bread', categoryId: 'food', image: '/assets/bread.webp', emoji: '🍞',
-        translations: { de: 'Brot', pinz: 'Broud', en: 'Bread', it: 'Pane', fr: 'Pain', tr: 'Ekmek', es: 'Pan', 'ar-sy': 'Khubz', zh: 'Miànbāo' }
-    },
-    {
-        id: 'water', categoryId: 'food', image: '/assets/water.webp', emoji: '💧',
-        translations: { de: 'Wasser', pinz: 'Wossa', en: 'Water', it: 'Acqua', fr: 'Eau', tr: 'Su', es: 'Agua', 'ar-sy': 'Māʾ', zh: 'Shuǐ' }
-    },
-    {
-        id: 'milk', categoryId: 'food', image: '/assets/milk.webp', emoji: '🥛',
-        translations: { de: 'Milch', pinz: 'Müch', en: 'Milk', it: 'Latte', fr: 'Lait', tr: 'Süt', es: 'Leche', 'ar-sy': 'Ḥalīb', zh: 'Niúnǎi' }
-    },
-    {
-        id: 'egg', categoryId: 'food', image: '/assets/egg.webp', emoji: '🥚',
-        translations: { de: 'Ei', pinz: 'Oa', en: 'Egg', it: 'Uovo', fr: 'Œuf', tr: 'Yumurta', es: 'Huevo', 'ar-sy': 'Bayḍa', zh: 'Jīdàn' }
-    },
-    {
-        id: 'cheese', categoryId: 'food', image: '/assets/cheese.webp', emoji: '🧀',
-        translations: { de: 'Käse', pinz: 'Kas', en: 'Cheese', it: 'Formaggio', fr: 'Fromage', tr: 'Peynir', es: 'Queso', 'ar-sy': 'Jibn', zh: 'Nǎilào' }
-    },
-    {
-        id: 'potato', categoryId: 'food', image: '/assets/potato.webp', emoji: '🥔',
-        translations: { de: 'Kartoffel', pinz: 'Eadepfi', en: 'Potato', it: 'Patata', fr: 'Pomme de terre', tr: 'Patates', es: 'Patata', 'ar-sy': 'Baṭāṭā', zh: 'Tǔdòu' }
-    },
-    {
-        id: 'carrot', categoryId: 'food', image: '/assets/carrot.webp', emoji: '🥕',
-        translations: { de: 'Karotte', pinz: 'Gelbarübn', en: 'Carrot', it: 'Carota', fr: 'Carotte', tr: 'Havuç', es: 'Zanahoria', 'ar-sy': 'Jazar', zh: 'Húluóbo' }
-    },
-    {
-        id: 'corn', categoryId: 'food', image: '/assets/corn.webp', emoji: '🌽',
-        translations: { de: 'Mais', pinz: 'Kukuruz', en: 'Corn', it: 'Mais', fr: 'Maïs', tr: 'Mısır', es: 'Maíz', 'ar-sy': 'Dhurra', zh: 'Yùmǐ' }
-    },
-    {
-        id: 'cheese', categoryId: 'food', image: '/assets/cheese.webp', emoji: '🧀',
-        translations: { de: 'Käse', pinz: 'Kas', en: 'Cheese', it: 'Formaggio', fr: 'Fromage', tr: 'Peynir', es: 'Queso', 'ar-sy': 'Jibn', zh: 'Nǎilào' }
-    },
-    {
-        id: 'strawberry', categoryId: 'food', image: '/assets/strawberry.webp', emoji: '🍓',
-        translations: { de: 'Erdbeere', pinz: 'Eadbea', en: 'Strawberry', it: 'Fragola', fr: 'Fraise', tr: 'Çilek', es: 'Fresa', 'ar-sy': 'Frawla', zh: 'Cǎoméi' }
-    },
-    {
-        id: 'icecream', categoryId: 'food', image: '/assets/icecream.webp', emoji: '🍦',
-        translations: { de: 'Eis', pinz: 'Eis', en: 'Ice Cream', it: 'Gelato', fr: 'Glace', tr: 'Dondurma', es: 'Helado', 'ar-sy': 'Būẓa', zh: 'Bīngqílín' }
-    },
+    { id: 'apple', categoryId: 'food', image: '/assets/apple.webp', emoji: '🍎', translations: { de: 'Apfel', pinz: 'Oapfi', en: 'Apple', it: 'Mela', fr: 'Pomme', tr: 'Elma', es: 'Manzana', 'ar-sy': 'Tuffāḥa', zh: 'Píngguǒ' } },
+    { id: 'banana', categoryId: 'food', image: '/assets/banana.webp', emoji: '🍌', translations: { de: 'Banane', pinz: 'Banane', en: 'Banana', it: 'Banana', fr: 'Banane', tr: 'Muz', es: 'Plátano', 'ar-sy': 'Mawz', zh: 'Xiāngjiāo' } },
+    { id: 'bread', categoryId: 'food', image: '/assets/bread.webp', emoji: '🍞', translations: { de: 'Brot', pinz: 'Broud', en: 'Bread', it: 'Pane', fr: 'Pain', tr: 'Ekmek', es: 'Pan', 'ar-sy': 'Khubz', zh: 'Miànbāo' } },
+    { id: 'water', categoryId: 'food', image: '/assets/water.webp', emoji: '💧', translations: { de: 'Wasser', pinz: 'Wossa', en: 'Water', it: 'Acqua', fr: 'Eau', tr: 'Su', es: 'Agua', 'ar-sy': 'Māʾ', zh: 'Shuǐ' } },
+    { id: 'milk', categoryId: 'food', image: '/assets/milk.webp', emoji: '🥛', translations: { de: 'Milch', pinz: 'Müch', en: 'Milk', it: 'Latte', fr: 'Lait', tr: 'Süt', es: 'Leche', 'ar-sy': 'Ḥalīb', zh: 'Niúnǎi' } },
+    { id: 'egg', categoryId: 'food', image: '/assets/egg.webp', emoji: '🥚', translations: { de: 'Ei', pinz: 'Oa', en: 'Egg', it: 'Uovo', fr: 'Œuf', tr: 'Yumurta', es: 'Huevo', 'ar-sy': 'Bayḍa', zh: 'Jīdàn' } },
+    { id: 'cheese', categoryId: 'food', image: '/assets/cheese.webp', emoji: '🧀', translations: { de: 'Käse', pinz: 'Kas', en: 'Cheese', it: 'Formaggio', fr: 'Fromage', tr: 'Peynir', es: 'Queso', 'ar-sy': 'Jibn', zh: 'Nǎilào' } },
+    { id: 'potato', categoryId: 'food', image: '/assets/potato.webp', emoji: '🥔', translations: { de: 'Kartoffel', pinz: 'Eadepfi', en: 'Potato', it: 'Patata', fr: 'Pomme de terre', tr: 'Patates', es: 'Patata', 'ar-sy': 'Baṭāṭā', zh: 'Tǔdòu' } },
+    { id: 'carrot', categoryId: 'food', image: '/assets/carrot.webp', emoji: '🥕', translations: { de: 'Karotte', pinz: 'Gelbarübn', en: 'Carrot', it: 'Carota', fr: 'Carotte', tr: 'Havuç', es: 'Zanahoria', 'ar-sy': 'Jazar', zh: 'Húluóbo' } },
+    { id: 'corn', categoryId: 'food', image: '/assets/corn.webp', emoji: '🌽', translations: { de: 'Mais', pinz: 'Kukuruz', en: 'Corn', it: 'Mais', fr: 'Maïs', tr: 'Mısır', es: 'Maíz', 'ar-sy': 'Dhurra', zh: 'Yùmǐ' } },
+    { id: 'strawberry', categoryId: 'food', image: '/assets/strawberry.webp', emoji: '🍓', translations: { de: 'Erdbeere', pinz: 'Eadbea', en: 'Strawberry', it: 'Fragola', fr: 'Fraise', tr: 'Çilek', es: 'Fresa', 'ar-sy': 'Frawla', zh: 'Cǎoméi' } },
+    { id: 'icecream', categoryId: 'food', image: '/assets/icecream.webp', emoji: '🍦', translations: { de: 'Eis', pinz: 'Eis', en: 'Ice Cream', it: 'Gelato', fr: 'Glace', tr: 'Dondurma', es: 'Helado', 'ar-sy': 'Būẓa', zh: 'Bīngqílín' } },
+    { id: 'cake', categoryId: 'food', image: '/assets/cake.webp', emoji: '🍰', translations: { de: 'Kuchen', pinz: 'Kuachn', en: 'Cake', it: 'Torta', fr: 'Gâteau', tr: 'Kek', es: 'Pastel', 'ar-sy': 'Kaʿk', zh: 'Dàngāo' } },
+    { id: 'chocolate', categoryId: 'food', image: '/assets/chocolate.webp', emoji: '🍫', translations: { de: 'Schokolade', pinz: 'Schoklad', en: 'Chocolate', it: 'Cioccolato', fr: 'Chocolat', tr: 'Çikolata', es: 'Chocolate', 'ar-sy': 'Shūkūlātah', zh: 'Qiǎokèlì' } },
+    { id: 'pizza', categoryId: 'food', image: '/assets/pizza.webp', emoji: '🍕', translations: { de: 'Pizza', pinz: 'Pizza', en: 'Pizza', it: 'Pizza', fr: 'Pizza', tr: 'Pizza', es: 'Pizza', 'ar-sy': 'Bītzā', zh: 'Pīsà' } },
+    { id: 'hamburger', categoryId: 'food', image: '/assets/hamburger.webp', emoji: '🍔', translations: { de: 'Burger', pinz: 'Burger', en: 'Burger', it: 'Hamburger', fr: 'Burger', tr: 'Hamburger', es: 'Hamburguesa', 'ar-sy': 'Burghar', zh: 'Hànbǎo' } },
+    { id: 'fries', categoryId: 'food', image: '/assets/fries.webp', emoji: '🍟', translations: { de: 'Pommes', pinz: 'Pommes', en: 'Fries', it: 'Patatine', fr: 'Frites', tr: 'Patates Kızartması', es: 'Papas fritas', 'ar-sy': 'Baṭāṭā maqliyya', zh: 'Shǔtiáo' } },
+    { id: 'soup', categoryId: 'food', image: '/assets/soup.webp', emoji: '🍜', translations: { de: 'Suppe', pinz: 'Suppn', en: 'Soup', it: 'Zuppa', fr: 'Soupe', tr: 'Çorba', es: 'Sopa', 'ar-sy': 'Ḥasāʾ', zh: 'Tāng' } },
+    { id: 'sandwich', categoryId: 'food', image: '/assets/sandwich.webp', emoji: '🥪', translations: { de: 'Sandwich', pinz: 'Jause', en: 'Sandwich', it: 'Panino', fr: 'Sandwich', tr: 'Sandviç', es: 'Sándwich', 'ar-sy': 'Shaṭīra', zh: 'Sānmíngzhì' } },
+    { id: 'salad', categoryId: 'food', image: '/assets/salad.webp', emoji: '🥗', translations: { de: 'Salat', pinz: 'Salat', en: 'Salad', it: 'Insalata', fr: 'Salade', tr: 'Salata', es: 'Ensalada', 'ar-sy': 'Salaṭa', zh: 'Shālā' } },
+    { id: 'grapes', categoryId: 'food', image: '/assets/grapes.webp', emoji: '🍇', translations: { de: 'Trauben', pinz: 'Weinbeal', en: 'Grapes', it: 'Uva', fr: 'Raisin', tr: 'Üzüm', es: 'Uvas', 'ar-sy': 'ʿInab', zh: 'Pútáo' } },
+    { id: 'melon', categoryId: 'food', image: '/assets/melon.webp', emoji: '🍉', translations: { de: 'Melone', pinz: 'Melone', en: 'Melon', it: 'Melone', fr: 'Melon', tr: 'Kavun', es: 'Melón', 'ar-sy': 'Baṭṭīkh', zh: 'Xīguā' } },
+    { id: 'orange', categoryId: 'food', image: '/assets/orange.webp', emoji: '🍊', translations: { de: 'Orange', pinz: 'Orangsch', en: 'Orange', it: 'Arancia', fr: 'Orange', tr: 'Portakal', es: 'Naranja', 'ar-sy': 'Burtuqāl', zh: 'Chéngzi' } },
+    { id: 'cucumber', categoryId: 'food', image: '/assets/cucumber.webp', emoji: '🥒', translations: { de: 'Gurke', pinz: 'Gukumer', en: 'Cucumber', it: 'Cetriolo', fr: 'Concombre', tr: 'Salatalık', es: 'Pepino', 'ar-sy': 'Khiyār', zh: 'Huángguā' } },
+    { id: 'tomato', categoryId: 'food', image: '/assets/tomato.webp', emoji: '🍅', translations: { de: 'Tomate', pinz: 'Paradeiser', en: 'Tomato', it: 'Pomodoro', fr: 'Tomate', tr: 'Domates', es: 'Tomate', 'ar-sy': 'Ṭamāṭim', zh: 'Xīhóngshì' } },
 
     // --- ANIMALS (TIERE) ---
-    {
-        id: 'cat', categoryId: 'animals', image: '/assets/cat.webp', emoji: '🐱',
-        translations: { de: 'Katze', pinz: 'Kotz', en: 'Cat', it: 'Gatto', fr: 'Chat', tr: 'Kedi', es: 'Gato', 'ar-sy': 'Qiṭṭa', zh: 'Māo' }
-    },
-    {
-        id: 'dog', categoryId: 'animals', image: '/assets/dog.webp', emoji: '🐶',
-        translations: { de: 'Hund', pinz: 'Hund', en: 'Dog', it: 'Cane', fr: 'Chien', tr: 'Köpek', es: 'Perro', 'ar-sy': 'Kalb', zh: 'Gǒu' }
-    },
-    {
-        id: 'cow', categoryId: 'animals', image: '/assets/cow.webp', emoji: '🐮',
-        translations: { de: 'Kuh', pinz: 'Kua', en: 'Cow', it: 'Mucca', fr: 'Vache', tr: 'İnek', es: 'Vaca', 'ar-sy': 'Baqara', zh: 'Niú' }
-    },
-    {
-        id: 'horse', categoryId: 'animals', image: '/assets/horse.webp', emoji: '🐴',
-        translations: { de: 'Pferd', pinz: 'Ressl', en: 'Horse', it: 'Cavallo', fr: 'Cheval', tr: 'At', es: 'Caballo', 'ar-sy': 'Ḥiṣān', zh: 'Mǎ' }
-    },
-    {
-        id: 'chicken', categoryId: 'animals', image: '/assets/chicken.webp', emoji: '🐔',
-        translations: { de: 'Huhn', pinz: 'Hendl', en: 'Chicken', it: 'Pollo', fr: 'Poulet', tr: 'Tavuk', es: 'Pollo', 'ar-sy': 'Dajāja', zh: 'Jī' }
-    },
-    {
-        id: 'pig', categoryId: 'animals', image: '/assets/pig.webp', emoji: '🐷',
-        translations: { de: 'Schwein', pinz: 'Sau', en: 'Pig', it: 'Maiale', fr: 'Cochon', tr: 'Domuz', es: 'Cerdo', 'ar-sy': 'Khinzīr', zh: 'Zhū' }
-    },
-    {
-        id: 'sheep', categoryId: 'animals', image: '/assets/sheep.webp', emoji: '🐑',
-        translations: { de: 'Schaf', pinz: 'Schof', en: 'Sheep', it: 'Pecora', fr: 'Mouton', tr: 'Koyun', es: 'Oveja', 'ar-sy': 'Kharūf', zh: 'Yáng' }
-    },
-    {
-        id: 'bird', categoryId: 'animals', image: '/assets/bird.webp', emoji: '🐦',
-        translations: { de: 'Vogel', pinz: 'Vogl', en: 'Bird', it: 'Uccello', fr: 'Oiseau', tr: 'Kuş', es: 'Pájaro', 'ar-sy': 'ʿUṣfūr', zh: 'Niǎo' }
-    },
-    {
-        id: 'lion', categoryId: 'animals', image: '/assets/lion.webp', emoji: '🦁',
-        translations: { de: 'Löwe', pinz: 'Löwe', en: 'Lion', it: 'Leone', fr: 'Lion', tr: 'Aslan', es: 'León', 'ar-sy': 'Asad', zh: 'Shīzi' }
-    },
-    {
-        id: 'elephant', categoryId: 'animals', image: '/assets/elephant.webp', emoji: '🐘',
-        translations: { de: 'Elefant', pinz: 'Elefant', en: 'Elephant', it: 'Elefante', fr: 'Éléphant', tr: 'Fil', es: 'Elefante', 'ar-sy': 'Fīl', zh: 'Dàxiàng' }
-    },
+    { id: 'cat', categoryId: 'animals', image: '/assets/cat.webp', emoji: '🐱', translations: { de: 'Katze', pinz: 'Kotz', en: 'Cat', it: 'Gatto', fr: 'Chat', tr: 'Kedi', es: 'Gato', 'ar-sy': 'Qiṭṭa', zh: 'Māo' } },
+    { id: 'dog', categoryId: 'animals', image: '/assets/dog.webp', emoji: '🐶', translations: { de: 'Hund', pinz: 'Hund', en: 'Dog', it: 'Cane', fr: 'Chien', tr: 'Köpek', es: 'Perro', 'ar-sy': 'Kalb', zh: 'Gǒu' } },
+    { id: 'cow', categoryId: 'animals', image: '/assets/cow.webp', emoji: '🐮', translations: { de: 'Kuh', pinz: 'Kua', en: 'Cow', it: 'Mucca', fr: 'Vache', tr: 'İnek', es: 'Vaca', 'ar-sy': 'Baqara', zh: 'Niú' } },
+    { id: 'horse', categoryId: 'animals', image: '/assets/horse.webp', emoji: '🐴', translations: { de: 'Pferd', pinz: 'Ressl', en: 'Horse', it: 'Cavallo', fr: 'Cheval', tr: 'At', es: 'Caballo', 'ar-sy': 'Ḥiṣān', zh: 'Mǎ' } },
+    { id: 'chicken', categoryId: 'animals', image: '/assets/chicken.webp', emoji: '🐔', translations: { de: 'Huhn', pinz: 'Hendl', en: 'Chicken', it: 'Pollo', fr: 'Poulet', tr: 'Tavuk', es: 'Pollo', 'ar-sy': 'Dajāja', zh: 'Jī' } },
+    { id: 'pig', categoryId: 'animals', image: '/assets/pig.webp', emoji: '🐷', translations: { de: 'Schwein', pinz: 'Sau', en: 'Pig', it: 'Maiale', fr: 'Cochon', tr: 'Domuz', es: 'Cerdo', 'ar-sy': 'Khinzīr', zh: 'Zhū' } },
+    { id: 'sheep', categoryId: 'animals', image: '/assets/sheep.webp', emoji: '🐑', translations: { de: 'Schaf', pinz: 'Schof', en: 'Sheep', it: 'Pecora', fr: 'Mouton', tr: 'Koyun', es: 'Oveja', 'ar-sy': 'Kharūf', zh: 'Yáng' } },
+    { id: 'bird', categoryId: 'animals', image: '/assets/bird.webp', emoji: '🐦', translations: { de: 'Vogel', pinz: 'Vogl', en: 'Bird', it: 'Uccello', fr: 'Oiseau', tr: 'Kuş', es: 'Pájaro', 'ar-sy': 'ʿUṣfūr', zh: 'Niǎo' } },
+    { id: 'lion', categoryId: 'animals', image: '/assets/lion.webp', emoji: '🦁', translations: { de: 'Löwe', pinz: 'Löwe', en: 'Lion', it: 'Leone', fr: 'Lion', tr: 'Aslan', es: 'León', 'ar-sy': 'Asad', zh: 'Shīzi' } },
+    { id: 'elephant', categoryId: 'animals', image: '/assets/elephant.webp', emoji: '🐘', translations: { de: 'Elefant', pinz: 'Elefant', en: 'Elephant', it: 'Elefante', fr: 'Éléphant', tr: 'Fil', es: 'Elefante', 'ar-sy': 'Fīl', zh: 'Dàxiàng' } },
+    { id: 'tiger', categoryId: 'animals', image: '/assets/tiger.webp', emoji: '🐯', translations: { de: 'Tiger', pinz: 'Tiger', en: 'Tiger', it: 'Tigre', fr: 'Tigre', tr: 'Kaplan', es: 'Tigre', 'ar-sy': 'Nimr', zh: 'Lǎohǔ' } },
+    { id: 'monkey', categoryId: 'animals', image: '/assets/monkey.webp', emoji: '🐒', translations: { de: 'Affe', pinz: 'Off', en: 'Monkey', it: 'Scimmia', fr: 'Singe', tr: 'Maymun', es: 'Mono', 'ar-sy': 'Qird', zh: 'Hóuzi' } },
+    { id: 'rabbit', categoryId: 'animals', image: '/assets/rabbit.webp', emoji: '🐰', translations: { de: 'Hase', pinz: 'Hos', en: 'Rabbit', it: 'Coniglio', fr: 'Lapin', tr: 'Tavşan', es: 'Conejo', 'ar-sy': 'Arnab', zh: 'Tùzi' } },
+    { id: 'mouse_anim', categoryId: 'animals', image: '/assets/mouse.webp', emoji: '🐭', translations: { de: 'Maus', pinz: 'Maus', en: 'Mouse', it: 'Topo', fr: 'Souris', tr: 'Fare', es: 'Ratón', 'ar-sy': 'Fāʾr', zh: 'Lǎoshǔ' } },
+    { id: 'frog', categoryId: 'animals', image: '/assets/frog.webp', emoji: '🐸', translations: { de: 'Frosch', pinz: 'Frosch', en: 'Frog', it: 'Rana', fr: 'Grenouille', tr: 'Kurbağa', es: 'Rana', 'ar-sy': 'Ḍifdaʿ', zh: 'Qīngwā' } },
+    { id: 'fish', categoryId: 'animals', image: '/assets/fish.webp', emoji: '🐟', translations: { de: 'Fisch', pinz: 'Fisch', en: 'Fish', it: 'Pesce', fr: 'Poisson', tr: 'Balık', es: 'Pez', 'ar-sy': 'Samaka', zh: 'Yú' } },
+    { id: 'dolphin', categoryId: 'animals', image: '/assets/dolphin.webp', emoji: '🐬', translations: { de: 'Delfin', pinz: 'Delfin', en: 'Dolphin', it: 'Delfino', fr: 'Dauphin', tr: 'Yunus', es: 'Delfín', 'ar-sy': 'Dūlfīn', zh: 'Hǎitún' } },
+    { id: 'penguin', categoryId: 'animals', image: '/assets/penguin.webp', emoji: '🐧', translations: { de: 'Pinguin', pinz: 'Pinguin', en: 'Penguin', it: 'Pinguino', fr: 'Manchot', tr: 'Penguen', es: 'Pingüino', 'ar-sy': 'Biṭrīq', zh: 'Qì\'é' } },
+    { id: 'snake', categoryId: 'animals', image: '/assets/snake.webp', emoji: '🐍', translations: { de: 'Schlange', pinz: 'Schlang', en: 'Snake', it: 'Serpente', fr: 'Serpent', tr: 'Yılan', es: 'Serpiente', 'ar-sy': 'Thuʿbān', zh: 'Shé' } },
+    { id: 'spider', categoryId: 'animals', image: '/assets/spider.webp', emoji: '🕷️', translations: { de: 'Spinne', pinz: 'Spinne', en: 'Spider', it: 'Ragno', fr: 'Araignée', tr: 'Örümcek', es: 'Araña', 'ar-sy': 'ʿAnkabūt', zh: 'Zhīzhū' } },
+    { id: 'butterfly', categoryId: 'animals', image: '/assets/butterfly.webp', emoji: '🦋', translations: { de: 'Schmetterling', pinz: 'Pifolter', en: 'Butterfly', it: 'Farfalla', fr: 'Papillon', tr: 'Kelebek', es: 'Mariposa', 'ar-sy': 'Farāsha', zh: 'Húdié' } },
+    { id: 'bee', categoryId: 'animals', image: '/assets/bee.webp', emoji: '🐝', translations: { de: 'Biene', pinz: 'Imp', en: 'Bee', it: 'Ape', fr: 'Abeille', tr: 'Arı', es: 'Abeja', 'ar-sy': 'Naḥla', zh: 'Mìfēng' } },
+    { id: 'turtle', categoryId: 'animals', image: '/assets/turtle.webp', emoji: '🐢', translations: { de: 'Schildkröte', pinz: 'Schildkrot', en: 'Turtle', it: 'Tartaruga', fr: 'Tortue', tr: 'Kaplumbağa', es: 'Tortuga', 'ar-sy': 'Sulḥafāt', zh: 'Wūguī' } },
+    { id: 'giraffe', categoryId: 'animals', image: '/assets/giraffe.webp', emoji: '🦒', translations: { de: 'Giraffe', pinz: 'Giraffe', en: 'Giraffe', it: 'Giraffa', fr: 'Girafe', tr: 'Zürafa', es: 'Jirafa', 'ar-sy': 'Zarāfa', zh: 'Chángjǐnglù' } },
+    { id: 'zebra', categoryId: 'animals', image: '/assets/zebra.webp', emoji: '🦓', translations: { de: 'Zebra', pinz: 'Zebra', en: 'Zebra', it: 'Zebra', fr: 'Zèbre', tr: 'Zebra', es: 'Cebra', 'ar-sy': 'Ḥimār waḥshī', zh: 'Bānmǎ' } },
+    { id: 'bear', categoryId: 'animals', image: '/assets/bear.webp', emoji: '🐻', translations: { de: 'Bär', pinz: 'Bär', en: 'Bear', it: 'Orso', fr: 'Ours', tr: 'Ayı', es: 'Oso', 'ar-sy': 'Dubb', zh: 'Xióng' } },
+    { id: 'fox', categoryId: 'animals', image: '/assets/fox.webp', emoji: '🦊', translations: { de: 'Fuchs', pinz: 'Fuchs', en: 'Fox', it: 'Volpe', fr: 'Renard', tr: 'Tilki', es: 'Zorro', 'ar-sy': 'Thaʿlab', zh: 'Húlí' } },
+    { id: 'owl', categoryId: 'animals', image: '/assets/owl.webp', emoji: '🦉', translations: { de: 'Eule', pinz: 'Eule', en: 'Owl', it: 'Gufo', fr: 'Hibou', tr: 'Baykuş', es: 'Búho', 'ar-sy': 'Būma', zh: 'Māotóuyīng' } },
 
     // --- NATURE (NATUR) ---
-    {
-        id: 'tree', categoryId: 'nature', image: '/assets/tree.webp', emoji: '🌳',
-        translations: { de: 'Baum', pinz: 'Bam', en: 'Tree', it: 'Albero', fr: 'Arbre', tr: 'Ağaç', es: 'Árbol', 'ar-sy': 'Shajara', zh: 'Shù' }
-    },
-    {
-        id: 'flower', categoryId: 'nature', image: '/assets/flower.webp', emoji: '🌸',
-        translations: { de: 'Blume', pinz: 'Bleamal', en: 'Flower', it: 'Fiore', fr: 'Fleur', tr: 'Çiçek', es: 'Flor', 'ar-sy': 'Zahra', zh: 'Huā' }
-    },
-    {
-        id: 'forest', categoryId: 'nature', image: '/assets/forest.webp', emoji: '🌲',
-        translations: { de: 'Wald', pinz: 'Woid', en: 'Forest', it: 'Foresta', fr: 'Forêt', tr: 'Orman', es: 'Bosque', 'ar-sy': 'Ghāba', zh: 'Sēnlín' }
-    },
-    {
-        id: 'mountain', categoryId: 'nature', image: '/assets/mountain.webp', emoji: '🏔️',
-        translations: { de: 'Berg', pinz: 'Beag', en: 'Mountain', it: 'Montagna', fr: 'Montagne', tr: 'Dağ', es: 'Montaña', 'ar-sy': 'Jabal', zh: 'Shān' }
-    },
-    {
-        id: 'lake', categoryId: 'nature', image: '/assets/lake.webp', emoji: '🌊',
-        translations: { de: 'See', pinz: 'See', en: 'Lake', it: 'Lago', fr: 'Lac', tr: 'Göl', es: 'Lago', 'ar-sy': 'Buḥayra', zh: 'Hú' }
-    },
+    { id: 'tree', categoryId: 'nature', image: '/assets/tree.webp', emoji: '🌳', translations: { de: 'Baum', pinz: 'Bam', en: 'Tree', it: 'Albero', fr: 'Arbre', tr: 'Ağaç', es: 'Árbol', 'ar-sy': 'Shajara', zh: 'Shù' } },
+    { id: 'flower', categoryId: 'nature', image: '/assets/flower.webp', emoji: '🌸', translations: { de: 'Blume', pinz: 'Bleamal', en: 'Flower', it: 'Fiore', fr: 'Fleur', tr: 'Çiçek', es: 'Flor', 'ar-sy': 'Zahra', zh: 'Huā' } },
+    { id: 'forest', categoryId: 'nature', image: '/assets/forest.webp', emoji: '🌲', translations: { de: 'Wald', pinz: 'Woid', en: 'Forest', it: 'Foresta', fr: 'Forêt', tr: 'Orman', es: 'Bosque', 'ar-sy': 'Ghāba', zh: 'Sēnlín' } },
+    { id: 'mountain', categoryId: 'nature', image: '/assets/mountain.webp', emoji: '🏔️', translations: { de: 'Berg', pinz: 'Beag', en: 'Mountain', it: 'Montagna', fr: 'Montagne', tr: 'Dağ', es: 'Montaña', 'ar-sy': 'Jabal', zh: 'Shān' } },
+    { id: 'lake', categoryId: 'nature', image: '/assets/lake.webp', emoji: '🌊', translations: { de: 'See', pinz: 'See', en: 'Lake', it: 'Lago', fr: 'Lac', tr: 'Göl', es: 'Lago', 'ar-sy': 'Buḥayra', zh: 'Hú' } },
+    { id: 'river', categoryId: 'nature', image: '/assets/river.webp', emoji: '🏞️', translations: { de: 'Fluss', pinz: 'Fluss', en: 'River', it: 'Fiume', fr: 'Rivière', tr: 'Nehir', es: 'Río', 'ar-sy': 'Nahr', zh: 'Hé' } },
+    { id: 'beach', categoryId: 'nature', image: '/assets/beach.webp', emoji: '🏖️', translations: { de: 'Strand', pinz: 'Strond', en: 'Beach', it: 'Spiaggia', fr: 'Plage', tr: 'Plaj', es: 'Playa', 'ar-sy': 'Shāṭiʾ', zh: 'Hǎitān' } },
+    { id: 'sea', categoryId: 'nature', image: '/assets/sea.webp', emoji: '🌊', translations: { de: 'Meer', pinz: 'Mea', en: 'Sea', it: 'Mare', fr: 'Mer', tr: 'Deniz', es: 'Mar', 'ar-sy': 'Baḥr', zh: 'Hǎi' } },
+    { id: 'sky', categoryId: 'nature', image: '/assets/sky.webp', emoji: '🌌', translations: { de: 'Himmel', pinz: 'Himmi', en: 'Sky', it: 'Cielo', fr: 'Ciel', tr: 'Gökyüzü', es: 'Cielo', 'ar-sy': 'Samāʾ', zh: 'Tiānkōng' } },
+    { id: 'cloud', categoryId: 'nature', image: '/assets/cloud.webp', emoji: '☁️', translations: { de: 'Wolke', pinz: 'Woikn', en: 'Cloud', it: 'Nuvola', fr: 'Nuage', tr: 'Bulut', es: 'Nube', 'ar-sy': 'Ghayma', zh: 'Yún' } },
+    { id: 'star', categoryId: 'nature', image: '/assets/star.webp', emoji: '⭐', translations: { de: 'Stern', pinz: 'Stean', en: 'Star', it: 'Stella', fr: 'Étoile', tr: 'Yıldız', es: 'Estrella', 'ar-sy': 'Najma', zh: 'Xīngxīng' } },
+    { id: 'moon', categoryId: 'nature', image: '/assets/moon.webp', emoji: '🌙', translations: { de: 'Mond', pinz: 'Mond', en: 'Moon', it: 'Luna', fr: 'Lune', tr: 'Ay', es: 'Luna', 'ar-sy': 'Qamar', zh: 'Yuèliàng' } },
+    { id: 'sun', categoryId: 'nature', image: '/assets/sun.webp', emoji: '☀️', translations: { de: 'Sonne', pinz: 'Sunn', en: 'Sun', it: 'Sole', fr: 'Soleil', tr: 'Güneş', es: 'Sol', 'ar-sy': 'Shams', zh: 'Tàiyáng' } },
+    { id: 'rainbow', categoryId: 'nature', image: '/assets/rainbow.webp', emoji: '🌈', translations: { de: 'Regenbogen', pinz: 'Regnbogn', en: 'Rainbow', it: 'Arcobaleno', fr: 'Arc-en-ciel', tr: 'Gökkuşağı', es: 'Arcoíris', 'ar-sy': 'Qaws quzaḥ', zh: 'Cáihóng' } },
+    { id: 'fire', categoryId: 'nature', image: '/assets/fire.webp', emoji: '🔥', translations: { de: 'Feuer', pinz: 'Feia', en: 'Fire', it: 'Fuoco', fr: 'Feu', tr: 'Ateş', es: 'Fuego', 'ar-sy': 'Nār', zh: 'Huǒ' } },
+    { id: 'stone', categoryId: 'nature', image: '/assets/stone.webp', emoji: '🪨', translations: { de: 'Stein', pinz: 'Stoa', en: 'Stone', it: 'Pietra', fr: 'Pierre', tr: 'Taş', es: 'Piedra', 'ar-sy': 'Ḥajar', zh: 'Shítou' } },
+    { id: 'sand', categoryId: 'nature', image: '/assets/sand.webp', emoji: '🏖️', translations: { de: 'Sand', pinz: 'Sond', en: 'Sand', it: 'Sabbia', fr: 'Sable', tr: 'Kum', es: 'Arena', 'ar-sy': 'Raml', zh: 'Shāzi' } },
+    { id: 'grass', categoryId: 'nature', image: '/assets/grass.webp', emoji: '🌿', translations: { de: 'Gras', pinz: 'Gros', en: 'Grass', it: 'Erba', fr: 'Herbe', tr: 'Çim', es: 'Césped', 'ar-sy': 'ʿUshb', zh: 'Cǎo' } },
+    { id: 'leaf', categoryId: 'nature', image: '/assets/leaf.webp', emoji: '🍃', translations: { de: 'Blatt', pinz: 'Blattl', en: 'Leaf', it: 'Foglia', fr: 'Feuille', tr: 'Yaprak', es: 'Hoja', 'ar-sy': 'Waraqa', zh: 'Yèzi' } },
 
-    // --- SEASONS & WEATHER (JAHRESZEITEN) ---
-    {
-        id: 'spring', categoryId: 'seasons', image: '/assets/spring.webp', emoji: '🌱',
-        translations: { de: 'Frühling', pinz: 'Frialing', en: 'Spring', it: 'Primavera', fr: 'Printemps', tr: 'İlkbahar', es: 'Primavera', 'ar-sy': 'Rabīʿ', zh: 'Chūntiān' }
-    },
-    {
-        id: 'summer', categoryId: 'seasons', image: '/assets/summer.webp', emoji: '☀️',
-        translations: { de: 'Sommer', pinz: 'Summa', en: 'Summer', it: 'Estate', fr: 'Été', tr: 'Yaz', es: 'Verano', 'ar-sy': 'Ṣayf', zh: 'Xiàtiān' }
-    },
-    {
-        id: 'autumn', categoryId: 'seasons', image: '/assets/autumn.webp', emoji: '🍂',
-        translations: { de: 'Herbst', pinz: 'Heabst', en: 'Autumn', it: 'Autunno', fr: 'Automne', tr: 'Sonbahar', es: 'Otoño', 'ar-sy': 'Kharīf', zh: 'Qiūtiān' }
-    },
-    {
-        id: 'winter', categoryId: 'seasons', image: '/assets/winter.webp', emoji: '⛄',
-        translations: { de: 'Winter', pinz: 'Winta', en: 'Winter', it: 'Inverno', fr: 'Hiver', tr: 'Kış', es: 'Invierno', 'ar-sy': 'Shitāʾ', zh: 'Dōngtiān' }
-    },
-    {
-        id: 'sun', categoryId: 'seasons', image: '/assets/sun.webp', emoji: '☀️',
-        translations: { de: 'Sonne', pinz: 'Sunn', en: 'Sun', it: 'Sole', fr: 'Soleil', tr: 'Güneş', es: 'Sol', 'ar-sy': 'Shams', zh: 'Tàiyáng' }
-    },
-    {
-        id: 'rain', categoryId: 'seasons', image: '/assets/rain.webp', emoji: '🌧️',
-        translations: { de: 'Regen', pinz: 'Reng', en: 'Rain', it: 'Pioggia', fr: 'Pluie', tr: 'Yağmur', es: 'Lluvia', 'ar-sy': 'Maṭar', zh: 'Yǔ' }
-    },
-    {
-        id: 'snow', categoryId: 'seasons', image: '/assets/snow.webp', emoji: '❄️',
-        translations: { de: 'Schnee', pinz: 'Schne', en: 'Snow', it: 'Neve', fr: 'Neige', tr: 'Kar', es: 'Nieve', 'ar-sy': 'Thalj', zh: 'Xuě' }
-    },
+    // --- SEASONS (JAHRESZEITEN) ---
+    { id: 'spring', categoryId: 'seasons', image: '/assets/spring.webp', emoji: '🌱', translations: { de: 'Frühling', pinz: 'Frialing', en: 'Spring', it: 'Primavera', fr: 'Printemps', tr: 'İlkbahar', es: 'Primavera', 'ar-sy': 'Rabīʿ', zh: 'Chūntiān' } },
+    { id: 'summer', categoryId: 'seasons', image: '/assets/summer.webp', emoji: '☀️', translations: { de: 'Sommer', pinz: 'Summa', en: 'Summer', it: 'Estate', fr: 'Été', tr: 'Yaz', es: 'Verano', 'ar-sy': 'Ṣayf', zh: 'Xiàtiān' } },
+    { id: 'autumn', categoryId: 'seasons', image: '/assets/autumn.webp', emoji: '🍂', translations: { de: 'Herbst', pinz: 'Heabst', en: 'Autumn', it: 'Autunno', fr: 'Automne', tr: 'Sonbahar', es: 'Otoño', 'ar-sy': 'Kharīf', zh: 'Qiūtiān' } },
+    { id: 'winter', categoryId: 'seasons', image: '/assets/winter.webp', emoji: '⛄', translations: { de: 'Winter', pinz: 'Winta', en: 'Winter', it: 'Inverno', fr: 'Hiver', tr: 'Kış', es: 'Invierno', 'ar-sy': 'Shitāʾ', zh: 'Dōngtiān' } },
+    { id: 'rain', categoryId: 'seasons', image: '/assets/rain.webp', emoji: '🌧️', translations: { de: 'Regen', pinz: 'Reng', en: 'Rain', it: 'Pioggia', fr: 'Pluie', tr: 'Yağmur', es: 'Lluvia', 'ar-sy': 'Maṭar', zh: 'Yǔ' } },
+    { id: 'snow', categoryId: 'seasons', image: '/assets/snow.webp', emoji: '❄️', translations: { de: 'Schnee', pinz: 'Schne', en: 'Snow', it: 'Neve', fr: 'Neige', tr: 'Kar', es: 'Nieve', 'ar-sy': 'Thalj', zh: 'Xuě' } },
+    { id: 'wind', categoryId: 'seasons', image: '/assets/wind.webp', emoji: '💨', translations: { de: 'Wind', pinz: 'Wind', en: 'Wind', it: 'Vento', fr: 'Vent', tr: 'Rüzgar', es: 'Viento', 'ar-sy': 'Rīḥ', zh: 'Fēng' } },
+    { id: 'storm', categoryId: 'seasons', image: '/assets/storm.webp', emoji: '⛈️', translations: { de: 'Gewitter', pinz: 'Wetta', en: 'Thunderstorm', it: 'Temporale', fr: 'Orage', tr: 'Fırtına', es: 'Tormenta', 'ar-sy': 'ʿĀṣifa', zh: 'Bàofēngyǔ' } },
+    { id: 'fog', categoryId: 'seasons', image: '/assets/fog.webp', emoji: '🌫️', translations: { de: 'Nebel', pinz: 'Nebi', en: 'Fog', it: 'Nebbia', fr: 'Brouillard', tr: 'Sis', es: 'Niebla', 'ar-sy': 'Ḍabāb', zh: 'Wù' } },
+    { id: 'ice', categoryId: 'seasons', image: '/assets/ice.webp', emoji: '🧊', translations: { de: 'Eis', pinz: 'Eis', en: 'Ice', it: 'Ghiaccio', fr: 'Glace', tr: 'Buz', es: 'Hielo', 'ar-sy': 'Jalīd', zh: 'Bīng' } },
+    { id: 'hot', categoryId: 'seasons', image: '/assets/hot.webp', emoji: '🥵', translations: { de: 'Heiß', pinz: 'Hoaß', en: 'Hot', it: 'Caldo', fr: 'Chaud', tr: 'Sıcak', es: 'Caliente', 'ar-sy': 'Ḥārr', zh: 'Rè' } },
+    { id: 'cold', categoryId: 'seasons', image: '/assets/cold.webp', emoji: '🥶', translations: { de: 'Kalt', pinz: 'Koid', en: 'Cold', it: 'Freddo', fr: 'Froid', tr: 'Soğuk', es: 'Frío', 'ar-sy': 'Bārid', zh: 'Lěng' } },
 
     // --- VEHICLES (FAHRZEUGE) ---
-    {
-        id: 'car', categoryId: 'vehicles', image: '/assets/car.webp', emoji: '🚗',
-        translations: { de: 'Auto', pinz: 'Auto', en: 'Car', it: 'Auto', fr: 'Voiture', tr: 'Araba', es: 'Coche', 'ar-sy': 'Sayyāra', zh: 'Qìchē' }
-    },
-    {
-        id: 'bicycle', categoryId: 'vehicles', image: '/assets/bicycle.webp', emoji: '🚲',
-        translations: { de: 'Fahrrad', pinz: 'Radl', en: 'Bicycle', it: 'Bicicletta', fr: 'Vélo', tr: 'Bisiklet', es: 'Bicicleta', 'ar-sy': 'Darrāja', zh: 'Zìxíngchē' }
-    },
-    {
-        id: 'bus', categoryId: 'vehicles', image: '/assets/bus.webp', emoji: '🚌',
-        translations: { de: 'Bus', pinz: 'Bus', en: 'Bus', it: 'Autobus', fr: 'Bus', tr: 'Otobüs', es: 'Autobús', 'ar-sy': 'Bāṣ', zh: 'Gōnggòng qìchē' }
-    },
-    {
-        id: 'train', categoryId: 'vehicles', image: '/assets/train.webp', emoji: '🚂',
-        translations: { de: 'Zug', pinz: 'Zug', en: 'Train', it: 'Treno', fr: 'Train', tr: 'Tren', es: 'Tren', 'ar-sy': 'Qiṭār', zh: 'Huǒchē' }
-    },
-    {
-        id: 'boat', categoryId: 'vehicles', image: '/assets/boat.webp', emoji: '⛵',
-        translations: { de: 'Boot', pinz: 'Boot', en: 'Boat', it: 'Barca', fr: 'Bateau', tr: 'Tekne', es: 'Barco', 'ar-sy': 'Qārib', zh: 'Chuán' }
-    },
-    {
-        id: 'helicopter', categoryId: 'vehicles', image: '/assets/helicopter.webp', emoji: '🚁',
-        translations: { de: 'Hubschrauber', pinz: 'Helikopta', en: 'Helicopter', it: 'Elicottero', fr: 'Hélicoptère', tr: 'Helikopter', es: 'Helicóptero', 'ar-sy': 'Mirwaḥiyya', zh: 'Zhíshēngjī' }
-    },
-    {
-        id: 'tractor', categoryId: 'vehicles', image: '/assets/tractor.webp', emoji: '🚜',
-        translations: { de: 'Traktor', pinz: 'Trakta', en: 'Tractor', it: 'Trattore', fr: 'Tracteur', tr: 'Traktör', es: 'Tractor', 'ar-sy': 'Jarrār', zh: 'Tuōlājī' }
-    },
-    {
-        id: 'airplane', categoryId: 'vehicles', image: '/assets/airplane.webp', emoji: '✈️',
-        translations: { de: 'Flugzeug', pinz: 'Fliaga', en: 'Airplane', it: 'Aereo', fr: 'Avion', tr: 'Uçak', es: 'Avión', 'ar-sy': 'Ṭāʾira', zh: 'Fēijī' }
-    },
-    {
-        id: 'firetruck', categoryId: 'vehicles', image: '/assets/firetruck.webp', emoji: '🚒',
-        translations: { de: 'Feuerwehr', pinz: 'Feiawea', en: 'Fire Truck', it: 'Pompieri', fr: 'Pompier', tr: 'İtfaiye', es: 'Bomberos', 'ar-sy': 'Sayyārat iṭfāʾ', zh: 'Xiāofángchē' }
-    },
+    { id: 'car', categoryId: 'vehicles', image: '/assets/car.webp', emoji: '🚗', translations: { de: 'Auto', pinz: 'Auto', en: 'Car', it: 'Auto', fr: 'Voiture', tr: 'Araba', es: 'Coche', 'ar-sy': 'Sayyāra', zh: 'Qìchē' } },
+    { id: 'bicycle', categoryId: 'vehicles', image: '/assets/bicycle.webp', emoji: '🚲', translations: { de: 'Fahrrad', pinz: 'Radl', en: 'Bicycle', it: 'Bicicletta', fr: 'Vélo', tr: 'Bisiklet', es: 'Bicicleta', 'ar-sy': 'Darrāja', zh: 'Zìxíngchē' } },
+    { id: 'bus', categoryId: 'vehicles', image: '/assets/bus.webp', emoji: '🚌', translations: { de: 'Bus', pinz: 'Bus', en: 'Bus', it: 'Autobus', fr: 'Bus', tr: 'Otobüs', es: 'Autobús', 'ar-sy': 'Bāṣ', zh: 'Gōnggòng qìchē' } },
+    { id: 'train', categoryId: 'vehicles', image: '/assets/train.webp', emoji: '🚂', translations: { de: 'Zug', pinz: 'Zug', en: 'Train', it: 'Treno', fr: 'Train', tr: 'Tren', es: 'Tren', 'ar-sy': 'Qiṭār', zh: 'Huǒchē' } },
+    { id: 'boat', categoryId: 'vehicles', image: '/assets/boat.webp', emoji: '⛵', translations: { de: 'Boot', pinz: 'Boot', en: 'Boat', it: 'Barca', fr: 'Bateau', tr: 'Tekne', es: 'Barco', 'ar-sy': 'Qārib', zh: 'Chuán' } },
+    { id: 'helicopter', categoryId: 'vehicles', image: '/assets/helicopter.webp', emoji: '🚁', translations: { de: 'Hubschrauber', pinz: 'Helikopta', en: 'Helicopter', it: 'Elicottero', fr: 'Hélicoptère', tr: 'Helikopter', es: 'Helicóptero', 'ar-sy': 'Mirwaḥiyya', zh: 'Zhíshēngjī' } },
+    { id: 'tractor', categoryId: 'vehicles', image: '/assets/tractor.webp', emoji: '🚜', translations: { de: 'Traktor', pinz: 'Trakta', en: 'Tractor', it: 'Trattore', fr: 'Tracteur', tr: 'Traktör', es: 'Tractor', 'ar-sy': 'Jarrār', zh: 'Tuōlājī' } },
+    { id: 'airplane', categoryId: 'vehicles', image: '/assets/airplane.webp', emoji: '✈️', translations: { de: 'Flugzeug', pinz: 'Fliaga', en: 'Airplane', it: 'Aereo', fr: 'Avion', tr: 'Uçak', es: 'Avión', 'ar-sy': 'Ṭāʾira', zh: 'Fēijī' } },
+    { id: 'firetruck', categoryId: 'vehicles', image: '/assets/firetruck.webp', emoji: '🚒', translations: { de: 'Feuerwehr', pinz: 'Feiawea', en: 'Fire Truck', it: 'Pompieri', fr: 'Pompier', tr: 'İtfaiye', es: 'Bomberos', 'ar-sy': 'Sayyārat iṭfāʾ', zh: 'Xiāofángchē' } },
+    { id: 'ambulance', categoryId: 'vehicles', image: '/assets/ambulance.webp', emoji: '🚑', translations: { de: 'Krankenwagen', pinz: 'Rettung', en: 'Ambulance', it: 'Ambulanza', fr: 'Ambulance', tr: 'Ambulans', es: 'Ambulancia', 'ar-sy': 'Sayyārat isʿāf', zh: 'Jiùhùchē' } },
+    { id: 'police', categoryId: 'vehicles', image: '/assets/police.webp', emoji: '🚓', translations: { de: 'Polizei', pinz: 'Polizei', en: 'Police Car', it: 'Polizia', fr: 'Police', tr: 'Polis', es: 'Policía', 'ar-sy': 'Shurṭa', zh: 'Jǐngchē' } },
+    { id: 'motorcycle', categoryId: 'vehicles', image: '/assets/motorcycle.webp', emoji: '🏍️', translations: { de: 'Motorrad', pinz: 'Moped', en: 'Motorcycle', it: 'Moto', fr: 'Moto', tr: 'Motosiklet', es: 'Motocicleta', 'ar-sy': 'Darrāja nāriyya', zh: 'Mótuōchē' } },
+    { id: 'taxi', categoryId: 'vehicles', image: '/assets/taxi.webp', emoji: '🚕', translations: { de: 'Taxi', pinz: 'Taxi', en: 'Taxi', it: 'Taxi', fr: 'Taxi', tr: 'Taksi', es: 'Taxi', 'ar-sy': 'Tāksī', zh: 'Chūzūchē' } },
+    { id: 'truck', categoryId: 'vehicles', image: '/assets/truck.webp', emoji: '🚚', translations: { de: 'LKW', pinz: 'Lasster', en: 'Truck', it: 'Camion', fr: 'Camion', tr: 'Kamyon', es: 'Camión', 'ar-sy': 'Shāḥina', zh: 'Kǎchē' } },
+    { id: 'rocket', categoryId: 'vehicles', image: '/assets/rocket.webp', emoji: '🚀', translations: { de: 'Rakete', pinz: 'Rakete', en: 'Rocket', it: 'Razzo', fr: 'Fusée', tr: 'Roket', es: 'Cohete', 'ar-sy': 'Ṣārūkh', zh: 'Huǒjiàn' } },
+    { id: 'scooter', categoryId: 'vehicles', image: '/assets/scooter.webp', emoji: '🛴', translations: { de: 'Roller', pinz: 'Rolla', en: 'Scooter', it: 'Monopattino', fr: 'Trottinette', tr: 'Scooter', es: 'Patinete', 'ar-sy': 'Sikūtar', zh: 'Huábǎnchē' } },
+    { id: 'ship', categoryId: 'vehicles', image: '/assets/ship.webp', emoji: '🚢', translations: { de: 'Schiff', pinz: 'Schiff', en: 'Ship', it: 'Nave', fr: 'Navire', tr: 'Gemi', es: 'Barco', 'ar-sy': 'Safīna', zh: 'Chuán' } },
+    { id: 'submarine', categoryId: 'vehicles', image: '/assets/submarine.webp', emoji: '🛥️', translations: { de: 'U-Boot', pinz: 'U-Boot', en: 'Submarine', it: 'Sottomarino', fr: 'Sous-marin', tr: 'Denizaltı', es: 'Submarino', 'ar-sy': 'Ghawwāṣa', zh: 'Qiánshuǐtǐng' } },
 
     // --- SPORTS (SPORT) ---
-    {
-        id: 'soccer', categoryId: 'sports', image: '/assets/soccer.webp', emoji: '⚽',
-        translations: { de: 'Fußball', pinz: 'Fuassboi', en: 'Soccer', it: 'Calcio', fr: 'Football', tr: 'Futbol', es: 'Fútbol', 'ar-sy': 'Kurat al-qadam', zh: 'Zúqiú' }
-    },
-    {
-        id: 'ski', categoryId: 'sports', image: '/assets/ski.webp', emoji: '🎿',
-        translations: { de: 'Ski', pinz: 'Schi', en: 'Ski', it: 'Sci', fr: 'Ski', tr: 'Kayak', es: 'Esquí', 'ar-sy': 'Tazalluj', zh: 'Huáxuě' }
-    },
-    {
-        id: 'swim', categoryId: 'sports', image: '/assets/swim.webp', emoji: '🏊',
-        translations: { de: 'Schwimmen', pinz: 'Schwimma', en: 'Swimming', it: 'Nuoto', fr: 'Natation', tr: 'Yüzme', es: 'Natación', 'ar-sy': 'Sibāḥa', zh: 'Yóuyǒng' }
-    },
-    {
-        id: 'tennis', categoryId: 'sports', image: '/assets/tennis.webp', emoji: '🎾',
-        translations: { de: 'Tennis', pinz: 'Tennis', en: 'Tennis', it: 'Tennis', fr: 'Tennis', tr: 'Tenis', es: 'Tenis', 'ar-sy': 'Tinnis', zh: 'Wǎngqiú' }
-    },
-    {
-        id: 'running', categoryId: 'sports', image: '/assets/running.webp', emoji: '🏃',
-        translations: { de: 'Laufen', pinz: 'Laufn', en: 'Running', it: 'Corsa', fr: 'Course', tr: 'Koşu', es: 'Correr', 'ar-sy': 'Rakḍ', zh: 'Pǎobù' }
-    },
+    { id: 'soccer', categoryId: 'sports', image: '/assets/soccer.webp', emoji: '⚽', translations: { de: 'Fußball', pinz: 'Fuassboi', en: 'Soccer', it: 'Calcio', fr: 'Football', tr: 'Futbol', es: 'Fútbol', 'ar-sy': 'Kurat al-qadam', zh: 'Zúqiú' } },
+    { id: 'ski', categoryId: 'sports', image: '/assets/ski.webp', emoji: '🎿', translations: { de: 'Ski', pinz: 'Schi', en: 'Ski', it: 'Sci', fr: 'Ski', tr: 'Kayak', es: 'Esquí', 'ar-sy': 'Tazalluj', zh: 'Huáxuě' } },
+    { id: 'swim', categoryId: 'sports', image: '/assets/swim.webp', emoji: '🏊', translations: { de: 'Schwimmen', pinz: 'Schwimma', en: 'Swimming', it: 'Nuoto', fr: 'Natation', tr: 'Yüzme', es: 'Natación', 'ar-sy': 'Sibāḥa', zh: 'Yóuyǒng' } },
+    { id: 'tennis', categoryId: 'sports', image: '/assets/tennis.webp', emoji: '🎾', translations: { de: 'Tennis', pinz: 'Tennis', en: 'Tennis', it: 'Tennis', fr: 'Tennis', tr: 'Tenis', es: 'Tenis', 'ar-sy': 'Tinnis', zh: 'Wǎngqiú' } },
+    { id: 'basketball', categoryId: 'sports', image: '/assets/basketball.webp', emoji: '🏀', translations: { de: 'Basketball', pinz: 'Basketboi', en: 'Basketball', it: 'Pallacanestro', fr: 'Basketball', tr: 'Basketbol', es: 'Baloncesto', 'ar-sy': 'Kurat al-salla', zh: 'Lánqiú' } },
+    { id: 'volleyball', categoryId: 'sports', image: '/assets/volleyball.webp', emoji: '🏐', translations: { de: 'Volleyball', pinz: 'Volleyboi', en: 'Volleyball', it: 'Pallavolo', fr: 'Volleyball', tr: 'Voleybol', es: 'Voleibol', 'ar-sy': 'Kurat al-ṭāʾira', zh: 'Páiqiú' } },
+    { id: 'baseball', categoryId: 'sports', image: '/assets/baseball.webp', emoji: '⚾', translations: { de: 'Baseball', pinz: 'Baseball', en: 'Baseball', it: 'Baseball', fr: 'Baseball', tr: 'Beyzbol', es: 'Béisbol', 'ar-sy': 'Bīsbūl', zh: 'Bàngqiú' } },
+    { id: 'cycling', categoryId: 'sports', image: '/assets/cycling.webp', emoji: '🚴', translations: { de: 'Radfahren', pinz: 'Radlfoahn', en: 'Cycling', it: 'Ciclismo', fr: 'Cyclisme', tr: 'Bisiklet sürme', es: 'Ciclismo', 'ar-sy': 'Rukūb al-darrāja', zh: 'Qí chē' } },
+    { id: 'running', categoryId: 'sports', image: '/assets/running.webp', emoji: '🏃', translations: { de: 'Laufen', pinz: 'Laufn', en: 'Running', it: 'Corsa', fr: 'Course', tr: 'Koşu', es: 'Correr', 'ar-sy': 'Rakḍ', zh: 'Pǎobù' } },
+    { id: 'gymnastics', categoryId: 'sports', image: '/assets/gymnastics.webp', emoji: '🤸', translations: { de: 'Turnen', pinz: 'Turnen', en: 'Gymnastics', it: 'Ginnastica', fr: 'Gymnastique', tr: 'Jimnastik', es: 'Gimnasia', 'ar-sy': 'Jumbāz', zh: 'Tǐcāo' } },
+    { id: 'climb', categoryId: 'sports', image: '/assets/climb.webp', emoji: '🧗', translations: { de: 'Klettern', pinz: 'Kraxln', en: 'Climbing', it: 'Arrampicata', fr: 'Escalade', tr: 'Tırmanma', es: 'Escalada', 'ar-sy': 'Tasalluq', zh: 'Pānyán' } },
+    { id: 'karate', categoryId: 'sports', image: '/assets/karate.webp', emoji: '🥋', translations: { de: 'Karate', pinz: 'Karate', en: 'Karate', it: 'Karate', fr: 'Karaté', tr: 'Karate', es: 'Kárate', 'ar-sy': 'Karātīh', zh: 'Kōngshǒudào' } },
+    { id: 'boxing', categoryId: 'sports', image: '/assets/boxing.webp', emoji: '🥊', translations: { de: 'Boxen', pinz: 'Boxn', en: 'Boxing', it: 'Pugilato', fr: 'Boxe', tr: 'Boks', es: 'Boxeo', 'ar-sy': 'Mulākama', zh: 'Quánjī' } },
+    { id: 'golf', categoryId: 'sports', image: '/assets/golf.webp', emoji: '⛳', translations: { de: 'Golf', pinz: 'Golf', en: 'Golf', it: 'Golf', fr: 'Golf', tr: 'Golf', es: 'Golf', 'ar-sy': 'Ghūlf', zh: 'Gāo\'ěrfū' } },
+    { id: 'hockey', categoryId: 'sports', image: '/assets/hockey.webp', emoji: '🏒', translations: { de: 'Eishockey', pinz: 'Eishockey', en: 'Ice Hockey', it: 'Hockey', fr: 'Hockey', tr: 'Hokey', es: 'Hockey', 'ar-sy': 'Hūkī', zh: 'Bīngqiú' } },
 
     // --- TOYS (SPIELZEUG) ---
-    {
-        id: 'ball', categoryId: 'toys', image: '/assets/ball.webp', emoji: '🏐',
-        translations: { de: 'Ball', pinz: 'Boi', en: 'Ball', it: 'Palla', fr: 'Balle', tr: 'Top', es: 'Pelota', 'ar-sy': 'Kura', zh: 'Qiú' }
-    },
-    {
-        id: 'doll', categoryId: 'toys', image: '/assets/doll.webp', emoji: '🎎',
-        translations: { de: 'Puppe', pinz: 'Puppn', en: 'Doll', it: 'Bambola', fr: 'Poupée', tr: 'Oyuncak Bebek', es: 'Muñeca', 'ar-sy': 'Dumya', zh: 'Wáwá' }
-    },
-    {
-        id: 'teddy', categoryId: 'toys', image: '/assets/teddy.webp', emoji: '🧸',
-        translations: { de: 'Teddybär', pinz: 'Teddy', en: 'Teddy Bear', it: 'Orsacchiotto', fr: 'Ours en peluche', tr: 'Oyuncak Ayı', es: 'Oso de peluche', 'ar-sy': 'Dubb', zh: 'Tàidíxióng' }
-    },
-    {
-        id: 'blocks', categoryId: 'toys', image: '/assets/blocks.webp', emoji: '🧱',
-        translations: { de: 'Bausteine', pinz: 'Baustana', en: 'Blocks', it: 'Costruzioni', fr: 'Blocs', tr: 'Bloklar', es: 'Bloques', 'ar-sy': 'Mukaʿʿabāt', zh: 'Jīmù' }
-    },
-    {
-        id: 'kite', categoryId: 'toys', image: '/assets/kite.webp', emoji: '🪁',
-        translations: { de: 'Drachen', pinz: 'Drachn', en: 'Kite', it: 'Aquilone', fr: 'Cerf-volant', tr: 'Uçurtma', es: 'Cometa', 'ar-sy': 'Ṭāʾira waraqiyya', zh: 'Fēngzhēng' }
-    },
+    { id: 'ball', categoryId: 'toys', image: '/assets/ball.webp', emoji: '🏐', translations: { de: 'Ball', pinz: 'Boi', en: 'Ball', it: 'Palla', fr: 'Balle', tr: 'Top', es: 'Pelota', 'ar-sy': 'Kura', zh: 'Qiú' } },
+    { id: 'doll', categoryId: 'toys', image: '/assets/doll.webp', emoji: '🎎', translations: { de: 'Puppe', pinz: 'Puppn', en: 'Doll', it: 'Bambola', fr: 'Poupée', tr: 'Oyuncak Bebek', es: 'Muñeca', 'ar-sy': 'Dumya', zh: 'Wáwá' } },
+    { id: 'teddy', categoryId: 'toys', image: '/assets/teddy.webp', emoji: '🧸', translations: { de: 'Teddybär', pinz: 'Teddy', en: 'Teddy Bear', it: 'Orsacchiotto', fr: 'Ours en peluche', tr: 'Oyuncak Ayı', es: 'Oso de peluche', 'ar-sy': 'Dubb', zh: 'Tàidíxióng' } },
+    { id: 'blocks', categoryId: 'toys', image: '/assets/blocks.webp', emoji: '🧱', translations: { de: 'Bausteine', pinz: 'Baustana', en: 'Blocks', it: 'Costruzioni', fr: 'Blocs', tr: 'Bloklar', es: 'Bloques', 'ar-sy': 'Mukaʿʿabāt', zh: 'Jīmù' } },
+    { id: 'kite', categoryId: 'toys', image: '/assets/kite.webp', emoji: '🪁', translations: { de: 'Drachen', pinz: 'Drachn', en: 'Kite', it: 'Aquilone', fr: 'Cerf-volant', tr: 'Uçurtma', es: 'Cometa', 'ar-sy': 'Ṭāʾira waraqiyya', zh: 'Fēngzhēng' } },
+    { id: 'car_toy', categoryId: 'toys', image: '/assets/car_toy.webp', emoji: '🏎️', translations: { de: 'Spielzeugauto', pinz: 'Auto', en: 'Toy Car', it: 'Macchinina', fr: 'Petite voiture', tr: 'Oyuncak Araba', es: 'Coche de juguete', 'ar-sy': 'Sayyārat laʿib', zh: 'Wánjù chē' } },
+    { id: 'puzzle', categoryId: 'toys', image: '/assets/puzzle.webp', emoji: '🧩', translations: { de: 'Puzzle', pinz: 'Puzzle', en: 'Puzzle', it: 'Puzzle', fr: 'Puzzle', tr: 'Yapboz', es: 'Rompecabezas', 'ar-sy': 'Lughz', zh: 'Pīntú' } },
+    { id: 'yo-yo', categoryId: 'toys', image: '/assets/yoyo.webp', emoji: '🪀', translations: { de: 'Jojo', pinz: 'Jojo', en: 'Yo-yo', it: 'Yo-yo', fr: 'Yo-yo', tr: 'Yoyo', es: 'Yoyó', 'ar-sy': 'Yūyū', zh: 'Liūliūqiú' } },
+    { id: 'robot_toy', categoryId: 'toys', image: '/assets/robot_toy.webp', emoji: '🤖', translations: { de: 'Roboter', pinz: 'Robota', en: 'Robot', it: 'Robot', fr: 'Robot', tr: 'Robot', es: 'Robot', 'ar-sy': 'Insān āli', zh: 'Jīqìrén' } },
+    { id: 'balloon', categoryId: 'toys', image: '/assets/balloon.webp', emoji: '🎈', translations: { de: 'Luftballon', pinz: 'Ballon', en: 'Balloon', it: 'Palloncino', fr: 'Ballon', tr: 'Balon', es: 'Globo', 'ar-sy': 'Bālūn', zh: 'Qìqiú' } },
+    { id: 'drum_toy', categoryId: 'toys', image: '/assets/drum.webp', emoji: '🥁', translations: { de: 'Trommel', pinz: 'Trommi', en: 'Drum', it: 'Tamburo', fr: 'Tambour', tr: 'Davul', es: 'Tambor', 'ar-sy': 'Ṭabl', zh: 'Gǔ' } },
+    { id: 'joystick', categoryId: 'toys', image: '/assets/joystick.webp', emoji: '🕹️', translations: { de: 'Videospiel', pinz: 'Gämboi', en: 'Video Game', it: 'Videogioco', fr: 'Jeu vidéo', tr: 'Video Oyunu', es: 'Videojuego', 'ar-sy': 'Laʿbat vīdiyū', zh: 'Diànzǐ yóuxì' } },
 
     // --- TECH (TECHNIK) ---
-    {
-        id: 'smartphone', categoryId: 'tech', image: '/assets/smartphone.webp', emoji: '📱',
-        translations: { de: 'Smartphone', pinz: 'Händi', en: 'Smartphone', it: 'Smartphone', fr: 'Smartphone', tr: 'Akıllı Telefon', es: 'Móvil', 'ar-sy': 'Jawwāl', zh: 'Shǒujī' }
-    },
-    {
-        id: 'computer', categoryId: 'tech', image: '/assets/computer.webp', emoji: '💻',
-        translations: { de: 'Computer', pinz: 'Kompjuta', en: 'Computer', it: 'Computer', fr: 'Ordinateur', tr: 'Bilgisayar', es: 'Ordenador', 'ar-sy': 'Ḥāsūb', zh: 'Diànnǎo' }
-    },
-    {
-        id: 'robot', categoryId: 'tech', image: '/assets/robot.webp', emoji: '🤖',
-        translations: { de: 'Roboter', pinz: 'Robota', en: 'Robot', it: 'Robot', fr: 'Robot', tr: 'Robot', es: 'Robot', 'ar-sy': 'Insān āli', zh: 'Jīqìrén' }
-    },
-    {
-        id: 'headphones', categoryId: 'tech', image: '/assets/headphones.webp', emoji: '🎧',
-        translations: { de: 'Kopfhörer', pinz: 'Kopfhörer', en: 'Headphones', it: 'Cuffie', fr: 'Écouteurs', tr: 'Kulaklık', es: 'Auriculares', 'ar-sy': 'Samāʿāt', zh: 'Ěrjī' }
-    },
+    { id: 'smartphone', categoryId: 'tech', image: '/assets/smartphone.webp', emoji: '📱', translations: { de: 'Smartphone', pinz: 'Händi', en: 'Smartphone', it: 'Smartphone', fr: 'Smartphone', tr: 'Akıllı Telefon', es: 'Móvil', 'ar-sy': 'Jawwāl', zh: 'Shǒujī' } },
+    { id: 'computer', categoryId: 'tech', image: '/assets/computer.webp', emoji: '💻', translations: { de: 'Computer', pinz: 'Kompjuta', en: 'Computer', it: 'Computer', fr: 'Ordinateur', tr: 'Bilgisayar', es: 'Ordenador', 'ar-sy': 'Ḥāsūb', zh: 'Diànnǎo' } },
+    { id: 'robot', categoryId: 'tech', image: '/assets/robot.webp', emoji: '🤖', translations: { de: 'Roboter', pinz: 'Robota', en: 'Robot', it: 'Robot', fr: 'Robot', tr: 'Robot', es: 'Robot', 'ar-sy': 'Insān āli', zh: 'Jīqìrén' } },
+    { id: 'headphones', categoryId: 'tech', image: '/assets/headphones.webp', emoji: '🎧', translations: { de: 'Kopfhörer', pinz: 'Kopfhörer', en: 'Headphones', it: 'Cuffie', fr: 'Écouteurs', tr: 'Kulaklık', es: 'Auriculares', 'ar-sy': 'Samāʿāt', zh: 'Ěrjī' } },
+    { id: 'mouse', categoryId: 'tech', image: '/assets/mouse.webp', emoji: '🖱️', translations: { de: 'Maus', pinz: 'Maus', en: 'Mouse', it: 'Mouse', fr: 'Souris', tr: 'Fare', es: 'Ratón', 'ar-sy': 'Fāʾra', zh: 'Shǔbiāo' } },
+    { id: 'keyboard', categoryId: 'tech', image: '/assets/keyboard.webp', emoji: '⌨️', translations: { de: 'Tastatur', pinz: 'Tastatur', en: 'Keyboard', it: 'Tastiera', fr: 'Clavier', tr: 'Klavye', es: 'Teclado', 'ar-sy': 'Lawḥat mafātīḥ', zh: 'Jiànpán' } },
+    { id: 'battery', categoryId: 'tech', image: '/assets/battery.webp', emoji: '🔋', translations: { de: 'Batterie', pinz: 'Batterie', en: 'Battery', it: 'Batteria', fr: 'Batterie', tr: 'Pil', es: 'Batería', 'ar-sy': 'Baṭṭāriyya', zh: 'Diànchí' } },
+    { id: 'camera', categoryId: 'tech', image: '/assets/camera.webp', emoji: '📷', translations: { de: 'Kamera', pinz: 'Kamera', en: 'Camera', it: 'Fotocamera', fr: 'Caméra', tr: 'Kamera', es: 'Cámara', 'ar-sy': 'Kāmīrā', zh: 'Xiàngjī' } },
+    { id: 'printer', categoryId: 'tech', image: '/assets/printer.webp', emoji: '🖨️', translations: { de: 'Drucker', pinz: 'Drucka', en: 'Printer', it: 'Stampante', fr: 'Imprimante', tr: 'Yazıcı', es: 'Impresora', 'ar-sy': 'Ṭābiʿa', zh: 'Dǎyìnjī' } },
+    { id: 'tv', categoryId: 'tech', image: '/assets/tv.webp', emoji: '📺', translations: { de: 'Fernseher', pinz: 'Feanseha', en: 'TV', it: 'TV', fr: 'Télé', tr: 'Televizyon', es: 'Televisión', 'ar-sy': 'Tilfāz', zh: 'Diànshì' } },
+    { id: 'gamepad', categoryId: 'tech', image: '/assets/gamepad.webp', emoji: '🎮', translations: { de: 'Controller', pinz: 'Drücka', en: 'Gamepad', it: 'Gamepad', fr: 'Manette', tr: 'Oyun Kolu', es: 'Mando', 'ar-sy': 'Yad taḥakkum', zh: 'Shǒubǐng' } },
+    { id: 'watch', categoryId: 'tech', image: '/assets/watch.webp', emoji: '⌚', translations: { de: 'Uhr', pinz: 'Uah', en: 'Watch', it: 'Orologio', fr: 'Montre', tr: 'Saat', es: 'Reloj', 'ar-sy': 'Sāʿa', zh: 'Shǒubiǎo' } },
+    { id: 'tablet', categoryId: 'tech', image: '/assets/tablet.webp', emoji: '📱', translations: { de: 'Tablet', pinz: 'Tablet', en: 'Tablet', it: 'Tablet', fr: 'Tablette', tr: 'Tablet', es: 'Tableta', 'ar-sy': 'Tāblit', zh: 'Píngbǎn' } },
+    { id: 'speaker', categoryId: 'tech', image: '/assets/speaker.webp', emoji: '🔈', translations: { de: 'Lautsprecher', pinz: 'Boxn', en: 'Speaker', it: 'Altoparlante', fr: 'Haut-parleur', tr: 'Hoparlör', es: 'Altavoz', 'ar-sy': 'Mukabbir ṣawt', zh: 'Yāngshēngqì' } },
+    { id: 'wifi', categoryId: 'tech', image: '/assets/wifi.webp', emoji: '📶', translations: { de: 'WLAN', pinz: 'Internet', en: 'WiFi', it: 'WiFi', fr: 'WiFi', tr: 'WiFi', es: 'WiFi', 'ar-sy': 'Wāy fāy', zh: 'Wúxiàn' } },
+    { id: 'plug', categoryId: 'tech', image: '/assets/plug.webp', emoji: '🔌', translations: { de: 'Stecker', pinz: 'Stecka', en: 'Plug', it: 'Spina', fr: 'Prise', tr: 'Fiş', es: 'Enchufe', 'ar-sy': 'Qābis', zh: 'Chātóu' } },
+    { id: 'bulb', categoryId: 'tech', image: '/assets/bulb.webp', emoji: '💡', translations: { de: 'Glühbirne', pinz: 'Biral', en: 'Light Bulb', it: 'Lampadina', fr: 'Ampoule', tr: 'Ampul', es: 'Bombilla', 'ar-sy': 'Miṣbāḥ', zh: 'Dēngpào' } },
 
     // --- SCHOOL (SCHULE) ---
-    {
-        id: 'book', categoryId: 'school', image: '/assets/book.webp', emoji: '📚',
-        translations: { de: 'Buch', pinz: 'Buach', en: 'Book', it: 'Libro', fr: 'Livre', tr: 'Kitap', es: 'Libro', 'ar-sy': 'Kitāb', zh: 'Shū' }
-    },
-    {
-        id: 'pencil', categoryId: 'school', image: '/assets/pencil.webp', emoji: '✏️',
-        translations: { de: 'Stift', pinz: 'Stift', en: 'Pencil', it: 'Matita', fr: 'Crayon', tr: 'Kalem', es: 'Lápiz', 'ar-sy': 'Qalam', zh: 'Qiānbǐ' }
-    },
-    {
-        id: 'bag', categoryId: 'school', image: '/assets/bag.webp', emoji: '🎒',
-        translations: { de: 'Schultasche', pinz: 'Toschn', en: 'Bag', it: 'Borsa', fr: 'Sac', tr: 'Çanta', es: 'Bolsa', 'ar-sy': 'Ḥaqība', zh: 'Bāo' }
-    },
-    {
-        id: 'scissors', categoryId: 'school', image: '/assets/scissors.webp', emoji: '✂️',
-        translations: { de: 'Schere', pinz: 'Schea', en: 'Scissors', it: 'Forbici', fr: 'Ciseaux', tr: 'Makas', es: 'Tijeras', 'ar-sy': 'Miqaṣṣ', zh: 'Jiǎndāo' }
-    },
+    { id: 'book', categoryId: 'school', image: '/assets/book.webp', emoji: '📚', translations: { de: 'Buch', pinz: 'Buach', en: 'Book', it: 'Libro', fr: 'Livre', tr: 'Kitap', es: 'Libro', 'ar-sy': 'Kitāb', zh: 'Shū' } },
+    { id: 'pencil', categoryId: 'school', image: '/assets/pencil.webp', emoji: '✏️', translations: { de: 'Stift', pinz: 'Stift', en: 'Pencil', it: 'Matita', fr: 'Crayon', tr: 'Kalem', es: 'Lápiz', 'ar-sy': 'Qalam', zh: 'Qiānbǐ' } },
+    { id: 'bag', categoryId: 'school', image: '/assets/bag.webp', emoji: '🎒', translations: { de: 'Schultasche', pinz: 'Toschn', en: 'Bag', it: 'Borsa', fr: 'Sac', tr: 'Çanta', es: 'Bolsa', 'ar-sy': 'Ḥaqība', zh: 'Bāo' } },
+    { id: 'scissors', categoryId: 'school', image: '/assets/scissors.webp', emoji: '✂️', translations: { de: 'Schere', pinz: 'Schea', en: 'Scissors', it: 'Forbici', fr: 'Ciseaux', tr: 'Makas', es: 'Tijeras', 'ar-sy': 'Miqaṣṣ', zh: 'Jiǎndāo' } },
+    { id: 'ruler', categoryId: 'school', image: '/assets/ruler.webp', emoji: '📏', translations: { de: 'Lineal', pinz: 'Lineal', en: 'Ruler', it: 'Righello', fr: 'Règle', tr: 'Cetvel', es: 'Regla', 'ar-sy': 'Misṭara', zh: 'Chǐzi' } },
+    { id: 'eraser', categoryId: 'school', image: '/assets/eraser.webp', emoji: '🧼', translations: { de: 'Radiergummi', pinz: 'Gummi', en: 'Eraser', it: 'Gomma', fr: 'Gomme', tr: 'Silgi', es: 'Borrador', 'ar-sy': 'Mimḥāt', zh: 'Xiàngpí' } },
+    { id: 'paper', categoryId: 'school', image: '/assets/paper.webp', emoji: '📄', translations: { de: 'Papier', pinz: 'Papia', en: 'Paper', it: 'Carta', fr: 'Papier', tr: 'Kağıt', es: 'Papel', 'ar-sy': 'Waraqa', zh: 'Zhǐ' } },
+    { id: 'desk', categoryId: 'school', image: '/assets/desk.webp', emoji: '🪑', translations: { de: 'Schreibtisch', pinz: 'Tisch', en: 'Desk', it: 'Scrivania', fr: 'Bureau', tr: 'Sıra', es: 'Escritorio', 'ar-sy': 'Maktab', zh: 'Shūzhuō' } },
+    { id: 'blackboard', categoryId: 'school', image: '/assets/blackboard.webp', emoji: '🏫', translations: { de: 'Tafel', pinz: 'Tofl', en: 'Blackboard', it: 'Lavagna', fr: 'Tableau noir', tr: 'Tahta', es: 'Pizarra', 'ar-sy': 'Sabbūra', zh: 'Hēibǎn' } },
+    { id: 'chalk', categoryId: 'school', image: '/assets/chalk.webp', emoji: '🖍️', translations: { de: 'Kreide', pinz: 'Kreidn', en: 'Chalk', it: 'Gesso', fr: 'Craie', tr: 'Tebeşir', es: 'Tiza', 'ar-sy': 'Ṭabāshīr', zh: 'Fěnbǐ' } },
+    { id: 'glue', categoryId: 'school', image: '/assets/glue.webp', emoji: '🧴', translations: { de: 'Kleber', pinz: 'Kleba', en: 'Glue', it: 'Colla', fr: 'Colle', tr: 'Yapıştırıcı', es: 'Pegamento', 'ar-sy': 'Ghirāʾ', zh: 'Jiāoshuǐ' } },
+    { id: 'calculator', categoryId: 'school', image: '/assets/calculator.webp', emoji: '🧮', translations: { de: 'Taschenrechner', pinz: 'Rechner', en: 'Calculator', it: 'Calcolatrice', fr: 'Calculatrice', tr: 'Hesap Makinesi', es: 'Calculadora', 'ar-sy': 'Āla ḥāsiba', zh: 'Jìsuànqì' } },
+    { id: 'map', categoryId: 'school', image: '/assets/map.webp', emoji: '🗺️', translations: { de: 'Landkarte', pinz: 'Koatn', en: 'Map', it: 'Mappa', fr: 'Carte', tr: 'Harita', es: 'Mapa', 'ar-sy': 'Kharīṭa', zh: 'Dìtú' } },
+    { id: 'globe', categoryId: 'school', image: '/assets/globe.webp', emoji: '🌍', translations: { de: 'Globus', pinz: 'Wödkugel', en: 'Globe', it: 'Globo', fr: 'Globe', tr: 'Küre', es: 'Globo', 'ar-sy': 'Kura arḍiyya', zh: 'Dìqiúyí' } },
+    { id: 'notebook', categoryId: 'school', image: '/assets/notebook.webp', emoji: '📓', translations: { de: 'Heft', pinz: 'Heftl', en: 'Notebook', it: 'Quaderno', fr: 'Cahier', tr: 'Defter', es: 'Cuaderno', 'ar-sy': 'Daftar', zh: 'Bǐjìběn' } },
 
     // --- HOME (ZUHAUSE) ---
-    {
-        id: 'house', categoryId: 'home', image: '/assets/house.webp', emoji: '🏠',
-        translations: { de: 'Haus', pinz: 'Haisl', en: 'House', it: 'Casa', fr: 'Maison', tr: 'Ev', es: 'Casa', 'ar-sy': 'Bayt', zh: 'Fángzi' }
-    },
-    {
-        id: 'bed', categoryId: 'home', image: '/assets/bed.webp', emoji: '🛏️',
-        translations: { de: 'Bett', pinz: 'Bett', en: 'Bed', it: 'Letto', fr: 'Lit', tr: 'Yatak', es: 'Cama', 'ar-sy': 'Sarīr', zh: 'Chuáng' }
-    },
-    {
-        id: 'chair', categoryId: 'home', image: '/assets/chair.webp', emoji: '🪑',
-        translations: { de: 'Sessel', pinz: 'Sessl', en: 'Chair', it: 'Sedia', fr: 'Chaise', tr: 'Sandalye', es: 'Silla', 'ar-sy': 'Kursī', zh: 'Yǐzi' }
-    },
-    {
-        id: 'table', categoryId: 'home', image: '/assets/table.webp', emoji: '🛡️',
-        translations: { de: 'Tisch', pinz: 'Tisch', en: 'Table', it: 'Tavolo', fr: 'Table', tr: 'Masa', es: 'Mesa', 'ar-sy': 'Ṭāwila', zh: 'Zhuōzi' }
-    },
-    {
-        id: 'lamp', categoryId: 'home', image: '/assets/lamp.webp', emoji: '💡',
-        translations: { de: 'Lampe', pinz: 'Lompm', en: 'Lamp', it: 'Lampada', fr: 'Lampe', tr: 'Lamba', es: 'Lámpara', 'ar-sy': 'Miṣbāḥ', zh: 'Dēng' }
-    },
+    { id: 'house', categoryId: 'home', image: '/assets/house.webp', emoji: '🏠', translations: { de: 'Haus', pinz: 'Haisl', en: 'House', it: 'Casa', fr: 'Maison', tr: 'Ev', es: 'Casa', 'ar-sy': 'Bayt', zh: 'Fángzi' } },
+    { id: 'bed', categoryId: 'home', image: '/assets/bed.webp', emoji: '🛏️', translations: { de: 'Bett', pinz: 'Bett', en: 'Bed', it: 'Letto', fr: 'Lit', tr: 'Yatak', es: 'Cama', 'ar-sy': 'Sarīr', zh: 'Chuáng' } },
+    { id: 'chair', categoryId: 'home', image: '/assets/chair.webp', emoji: '🪑', translations: { de: 'Sessel', pinz: 'Sessl', en: 'Chair', it: 'Sedia', fr: 'Chaise', tr: 'Sandalye', es: 'Silla', 'ar-sy': 'Kursī', zh: 'Yǐzi' } },
+    { id: 'table', categoryId: 'home', image: '/assets/table.webp', emoji: '🛡️', translations: { de: 'Tisch', pinz: 'Tisch', en: 'Table', it: 'Tavolo', fr: 'Table', tr: 'Masa', es: 'Mesa', 'ar-sy': 'Ṭāwila', zh: 'Zhuōzi' } },
+    { id: 'lamp', categoryId: 'home', image: '/assets/lamp.webp', emoji: '💡', translations: { de: 'Lampe', pinz: 'Lompm', en: 'Lamp', it: 'Lampada', fr: 'Lampe', tr: 'Lamba', es: 'Lámpara', 'ar-sy': 'Miṣbāḥ', zh: 'Dēng' } },
+    { id: 'couch', categoryId: 'home', image: '/assets/couch.webp', emoji: '🛋️', translations: { de: 'Sofa', pinz: 'Kanapee', en: 'Sofa', it: 'Divano', fr: 'Canapé', tr: 'Kanepe', es: 'Sofá', 'ar-sy': 'Arīka', zh: 'Shāfā' } },
+    { id: 'door', categoryId: 'home', image: '/assets/door.webp', emoji: '🚪', translations: { de: 'Tür', pinz: 'Tia', en: 'Door', it: 'Porta', fr: 'Porte', tr: 'Kapı', es: 'Puerta', 'ar-sy': 'Bāb', zh: 'Mén' } },
+    { id: 'window', categoryId: 'home', image: '/assets/window.webp', emoji: '🪟', translations: { de: 'Fenster', pinz: 'Fensta', en: 'Window', it: 'Finestra', fr: 'Fenêtre', tr: 'Pencere', es: 'Ventana', 'ar-sy': 'Nāfidha', zh: 'Chuānghù' } },
+    { id: 'clock', categoryId: 'home', image: '/assets/clock.webp', emoji: '⏰', translations: { de: 'Wecker', pinz: 'Wecka', en: 'Alarm Clock', it: 'Sveglia', fr: 'Réveil', tr: 'Çalar Saat', es: 'Despertador', 'ar-sy': 'Munabbih', zh: 'Nàozhōng' } },
+    { id: 'toilet', categoryId: 'home', image: '/assets/toilet.webp', emoji: '🚽', translations: { de: 'Toilette', pinz: 'Klo', en: 'Toilet', it: 'Bagno', fr: 'Toilettes', tr: 'Tuvalet', es: 'Inodoro', 'ar-sy': 'Mirḥāḍ', zh: 'Cèsuǒ' } },
+    { id: 'shower', categoryId: 'home', image: '/assets/shower.webp', emoji: '🚿', translations: { de: 'Dusche', pinz: 'Dusch', en: 'Shower', it: 'Doccia', fr: 'Douche', tr: 'Duş', es: 'Ducha', 'ar-sy': 'Dūsh', zh: 'Línyù' } },
+    { id: 'bathtub', categoryId: 'home', image: '/assets/bathtub.webp', emoji: '🛁', translations: { de: 'Badewanne', pinz: 'Wanne', en: 'Bathtub', it: 'Vasca', fr: 'Baignoire', tr: 'Küvet', es: 'Bañera', 'ar-sy': 'Ḥawḍ istiḥmām', zh: 'Yùgāng' } },
+    { id: 'fridge', categoryId: 'home', image: '/assets/fridge.webp', emoji: '❄️', translations: { de: 'Kühlschrank', pinz: 'Eiskostn', en: 'Fridge', it: 'Frigorifero', fr: 'Réfrigérateur', tr: 'Buzdolabı', es: 'Refrigerador', 'ar-sy': 'Thallāja', zh: 'Bīngxiāng' } },
+    { id: 'oven', categoryId: 'home', image: '/assets/oven.webp', emoji: '🍳', translations: { de: 'Herd', pinz: 'Head', en: 'Stove', it: 'Fornello', fr: 'Cuisinière', tr: 'Ocak', es: 'Estufa', 'ar-sy': 'Mawqid', zh: 'Lúzào' } },
+    { id: 'pot', categoryId: 'home', image: '/assets/pot.webp', emoji: '🥘', translations: { de: 'Topf', pinz: 'Topf', en: 'Pot', it: 'Pentola', fr: 'Casserole', tr: 'Tencere', es: 'Olla', 'ar-sy': 'Qidr', zh: 'Guō' } },
 
     // --- CLOTHING (KLEIDUNG) ---
-    {
-        id: 'tshirt', categoryId: 'clothing', image: '/assets/tshirt.webp', emoji: '👕',
-        translations: { de: 'T-Shirt', pinz: 'Leibal', en: 'T-Shirt', it: 'Maglietta', fr: 'T-shirt', tr: 'Tişört', es: 'Camiseta', 'ar-sy': 'Qamīṣ', zh: 'T-xù' }
-    },
-    {
-        id: 'pants', categoryId: 'clothing', image: '/assets/pants.webp', emoji: '👖',
-        translations: { de: 'Hose', pinz: 'Hosn', en: 'Pants', it: 'Pantaloni', fr: 'Pantalon', tr: 'Pantolon', es: 'Pantalones', 'ar-sy': 'Banṭalūn', zh: 'Kùzi' }
-    },
-    {
-        id: 'shoes', categoryId: 'clothing', image: '/assets/shoes.webp', emoji: '👟',
-        translations: { de: 'Schuhe', pinz: 'Schuach', en: 'Shoes', it: 'Scarpe', fr: 'Chaussures', tr: 'Ayakkabı', es: 'Zapatos', 'ar-sy': 'Ḥidhāʾ', zh: 'Xiézi' }
-    },
-    {
-        id: 'hat', categoryId: 'clothing', image: '/assets/hat.webp', emoji: '🧢',
-        translations: { de: 'Hut', pinz: 'Huad', en: 'Hat', it: 'Cappello', fr: 'Chapeau', tr: 'Şapka', es: 'Sombrero', 'ar-sy': 'Qubbaʿa', zh: 'Màozi' }
-    },
-    {
-        id: 'jacket', categoryId: 'clothing', image: '/assets/jacket.webp', emoji: '🧥',
-        translations: { de: 'Jacke', pinz: 'Jackn', en: 'Jacket', it: 'Giacca', fr: 'Veste', tr: 'Ceket', es: 'Chaqueta', 'ar-sy': 'Muʿṭaf', zh: 'Jiákè' }
-    },
+    { id: 'tshirt', categoryId: 'clothing', image: '/assets/tshirt.webp', emoji: '👕', translations: { de: 'T-Shirt', pinz: 'Leibal', en: 'T-Shirt', it: 'Maglietta', fr: 'T-shirt', tr: 'Tişört', es: 'Camiseta', 'ar-sy': 'Qamīṣ', zh: 'T-xù' } },
+    { id: 'pants', categoryId: 'clothing', image: '/assets/pants.webp', emoji: '👖', translations: { de: 'Hose', pinz: 'Hosn', en: 'Pants', it: 'Pantaloni', fr: 'Pantalon', tr: 'Pantolon', es: 'Pantalones', 'ar-sy': 'Banṭalūn', zh: 'Kùzi' } },
+    { id: 'shoes', categoryId: 'clothing', image: '/assets/shoes.webp', emoji: '👟', translations: { de: 'Schuhe', pinz: 'Schuach', en: 'Shoes', it: 'Scarpe', fr: 'Chaussures', tr: 'Ayakkabı', es: 'Zapatos', 'ar-sy': 'Ḥidhāʾ', zh: 'Xiézi' } },
+    { id: 'hat', categoryId: 'clothing', image: '/assets/hat.webp', emoji: '🧢', translations: { de: 'Hut', pinz: 'Huad', en: 'Hat', it: 'Cappello', fr: 'Chapeau', tr: 'Şapka', es: 'Sombrero', 'ar-sy': 'Qubbaʿa', zh: 'Màozi' } },
+    { id: 'jacket', categoryId: 'clothing', image: '/assets/jacket.webp', emoji: '🧥', translations: { de: 'Jacke', pinz: 'Jackn', en: 'Jacket', it: 'Giacca', fr: 'Veste', tr: 'Ceket', es: 'Chaqueta', 'ar-sy': 'Muʿṭaf', zh: 'Jiákè' } },
+    { id: 'socks', categoryId: 'clothing', image: '/assets/socks.webp', emoji: '🧦', translations: { de: 'Socken', pinz: 'Sockn', en: 'Socks', it: 'Calzini', fr: 'Chaussettes', tr: 'Çorap', es: 'Calcetines', 'ar-sy': 'Jawrab', zh: 'Wàzi' } },
+    { id: 'dress', categoryId: 'clothing', image: '/assets/dress.webp', emoji: '👗', translations: { de: 'Kleid', pinz: 'Kload', en: 'Dress', it: 'Vestito', fr: 'Robe', tr: 'Elbise', es: 'Vestido', 'ar-sy': 'Fustān', zh: 'Liányīqún' } },
+    { id: 'skirt', categoryId: 'clothing', image: '/assets/skirt.webp', emoji: '🩰', translations: { de: 'Rock', pinz: 'Kittl', en: 'Skirt', it: 'Gonna', fr: 'Jupe', tr: 'Etek', es: 'Falda', 'ar-sy': 'Tannūra', zh: 'Qúnzi' } },
+    { id: 'gloves', categoryId: 'clothing', image: '/assets/gloves.webp', emoji: '🧤', translations: { de: 'Handschuhe', pinz: 'Hantsch', en: 'Gloves', it: 'Guanti', fr: 'Gants', tr: 'Eldiven', es: 'Guantes', 'ar-sy': 'Quffāz', zh: 'Shǒutào' } },
+    { id: 'scarf', categoryId: 'clothing', image: '/assets/scarf.webp', emoji: '🧣', translations: { de: 'Schal', pinz: 'Schal', en: 'Scarf', it: 'Sciarpa', fr: 'Écharpe', tr: 'Atkı', es: 'Bufanda', 'ar-sy': 'Wishāḥ', zh: 'Wéijīn' } },
+    { id: 'glasses', categoryId: 'clothing', image: '/assets/glasses.webp', emoji: '👓', translations: { de: 'Brille', pinz: 'Brülln', en: 'Glasses', it: 'Occhiali', fr: 'Lunettes', tr: 'Gözlük', es: 'Gafas', 'ar-sy': 'Naẓẓāra', zh: 'Yǎnjìng' } },
+    { id: 'belt', categoryId: 'clothing', image: '/assets/belt.webp', emoji: '👖', translations: { de: 'Gürtel', pinz: 'Giatl', en: 'Belt', it: 'Cintura', fr: 'Ceinture', tr: 'Kemer', es: 'Cinturón', 'ar-sy': 'Ḥizām', zh: 'Pídài' } },
+    { id: 'boots', categoryId: 'clothing', image: '/assets/boots.webp', emoji: '👢', translations: { de: 'Stiefel', pinz: 'Stiefi', en: 'Boots', it: 'Stivali', fr: 'Bottes', tr: 'Çizme', es: 'Botas', 'ar-sy': 'Jazma', zh: 'Xuēzi' } },
+    { id: 'swimsuit', categoryId: 'clothing', image: '/assets/swimsuit.webp', emoji: '🩱', translations: { de: 'Badeanzug', pinz: 'Bodeanzug', en: 'Swimsuit', it: 'Costume', fr: 'Maillot de bain', tr: 'Mayo', es: 'Bañador', 'ar-sy': 'Māyūh', zh: 'Yǒngyī' } },
 
     // --- BODY (KÖRPER) ---
-    {
-        id: 'head', categoryId: 'body', image: '/assets/head.webp', emoji: '😶',
-        translations: { de: 'Kopf', pinz: 'Kopf', en: 'Head', it: 'Testa', fr: 'Tête', tr: 'Baş', es: 'Cabeza', 'ar-sy': 'Raʾs', zh: 'Tóu' }
-    },
-    {
-        id: 'hand', categoryId: 'body', image: '/assets/hand.webp', emoji: '🖐️',
-        translations: { de: 'Hand', pinz: 'Hond', en: 'Hand', it: 'Mano', fr: 'Main', tr: 'El', es: 'Mano', 'ar-sy': 'Yad', zh: 'Shǒu' }
-    },
-    {
-        id: 'foot', categoryId: 'body', image: '/assets/foot.webp', emoji: '🦶',
-        translations: { de: 'Fuß', pinz: 'Fuaß', en: 'Foot', it: 'Piede', fr: 'Pied', tr: 'Ayak', es: 'Pie', 'ar-sy': 'Qadam', zh: 'Jiǎo' }
-    },
-    {
-        id: 'eye', categoryId: 'body', image: '/assets/eye.webp', emoji: '👁️',
-        translations: { de: 'Auge', pinz: 'Aug', en: 'Eye', it: 'Occhio', fr: 'Œil', tr: 'Göz', es: 'Ojo', 'ar-sy': 'ʿAyn', zh: 'Yǎnjīng' }
-    },
-    {
-        id: 'mouth', categoryId: 'body', image: '/assets/mouth.webp', emoji: '👄',
-        translations: { de: 'Mund', pinz: 'Mund', en: 'Mouth', it: 'Bocca', fr: 'Bouche', tr: 'Ağız', es: 'Boca', 'ar-sy': 'Fam', zh: 'Zuǐ' }
-    },
-    {
-        id: 'nose', categoryId: 'body', image: '/assets/nose.webp', emoji: '👃',
-        translations: { de: 'Nase', pinz: 'Nosn', en: 'Nose', it: 'Naso', fr: 'Nez', tr: 'Burun', es: 'Nariz', 'ar-sy': 'Anf', zh: 'Bízi' }
-    },
+    { id: 'head', categoryId: 'body', image: '/assets/head.webp', emoji: '🙃', translations: { de: 'Kopf', pinz: 'Kopf', en: 'Head', it: 'Testa', fr: 'Tête', tr: 'Baş', es: 'Cabeza', 'ar-sy': 'Raʾs', zh: 'Tóu' } },
+    { id: 'hand', categoryId: 'body', image: '/assets/hand.webp', emoji: '🖐️', translations: { de: 'Hand', pinz: 'Hond', en: 'Hand', it: 'Mano', fr: 'Main', tr: 'El', es: 'Mano', 'ar-sy': 'Yad', zh: 'Shǒu' } },
+    { id: 'foot', categoryId: 'body', image: '/assets/foot.webp', emoji: '🦶', translations: { de: 'Fuß', pinz: 'Fuaß', en: 'Foot', it: 'Piede', fr: 'Pied', tr: 'Ayak', es: 'Pie', 'ar-sy': 'Qadam', zh: 'Jiǎo' } },
+    { id: 'eye', categoryId: 'body', image: '/assets/eye.webp', emoji: '👁️', translations: { de: 'Auge', pinz: 'Aug', en: 'Eye', it: 'Occhio', fr: 'Œil', tr: 'Göz', es: 'Ojo', 'ar-sy': 'ʿAyn', zh: 'Yǎnjīng' } },
+    { id: 'mouth', categoryId: 'body', image: '/assets/mouth.webp', emoji: '👄', translations: { de: 'Mund', pinz: 'Mund', en: 'Mouth', it: 'Bocca', fr: 'Bouche', tr: 'Ağız', es: 'Boca', 'ar-sy': 'Fam', zh: 'Zuǐ' } },
+    { id: 'nose', categoryId: 'body', image: '/assets/nose.webp', emoji: '👃', translations: { de: 'Nase', pinz: 'Nosn', en: 'Nose', it: 'Naso', fr: 'Nez', tr: 'Burun', es: 'Nariz', 'ar-sy': 'Anf', zh: 'Bízi' } },
+    { id: 'ear', categoryId: 'body', image: '/assets/ear.webp', emoji: '👂', translations: { de: 'Ohr', pinz: 'Ohr', en: 'Ear', it: 'Orecchio', fr: 'Oreille', tr: 'Kulak', es: 'Oreja', 'ar-sy': 'Udhn', zh: 'Ěrduǒ' } },
+    { id: 'hair', categoryId: 'body', image: '/assets/hair.webp', emoji: '💇', translations: { de: 'Haare', pinz: 'Hoar', en: 'Hair', it: 'Capelli', fr: 'Cheveux', tr: 'Saç', es: 'Pelo', 'ar-sy': 'Shaʿr', zh: 'Tóufǎ' } },
+    { id: 'finger', categoryId: 'body', image: '/assets/finger.webp', emoji: '☝️', translations: { de: 'Finger', pinz: 'Finga', en: 'Finger', it: 'Dito', fr: 'Doigt', tr: 'Parmak', es: 'Dedo', 'ar-sy': 'Iṣbaʿ', zh: 'Shǒuzhǐ' } },
+    { id: 'tooth', categoryId: 'body', image: '/assets/tooth.webp', emoji: '🦷', translations: { de: 'Zahn', pinz: 'Zoh', en: 'Tooth', it: 'Dente', fr: 'Dent', tr: 'Diş', es: 'Diente', 'ar-sy': 'Sinn', zh: 'Yáchǐ' } },
+    { id: 'tongue', categoryId: 'body', image: '/assets/tongue.webp', emoji: '👅', translations: { de: 'Zunge', pinz: 'Zung', en: 'Tongue', it: 'Lingua', fr: 'Langue', tr: 'Dil', es: 'Lengua', 'ar-sy': 'Lisān', zh: 'Shétou' } },
+    { id: 'leg', categoryId: 'body', image: '/assets/leg.webp', emoji: '🦵', translations: { de: 'Bein', pinz: 'Haxn', en: 'Leg', it: 'Gamba', fr: 'Jambe', tr: 'Bacak', es: 'Pierna', 'ar-sy': 'Sāq', zh: 'Tuǐ' } },
+    { id: 'arm', categoryId: 'body', image: '/assets/arm.webp', emoji: '💪', translations: { de: 'Arm', pinz: 'Oam', en: 'Arm', it: 'Braccio', fr: 'Bras', tr: 'Kol', es: 'Brazo', 'ar-sy': 'Dhirāʿ', zh: 'Gēbó' } },
+    { id: 'knee', categoryId: 'body', image: '/assets/knee.webp', emoji: '🦵', translations: { de: 'Knie', pinz: 'Knia', en: 'Knee', it: 'Ginocchio', fr: 'Genou', tr: 'Diz', es: 'Rodilla', 'ar-sy': 'Rukba', zh: 'Xīgài' } },
+    { id: 'belly', categoryId: 'body', image: '/assets/belly.webp', emoji: '🤰', translations: { de: 'Bauch', pinz: 'Wompn', en: 'Belly', it: 'Pancia', fr: 'Ventre', tr: 'Karın', es: 'Barriga', 'ar-sy': 'Baṭn', zh: 'Dùzi' } },
+    { id: 'back', categoryId: 'body', image: '/assets/back.webp', emoji: '🔙', translations: { de: 'Rücken', pinz: 'Buckl', en: 'Back', it: 'Schiena', fr: 'Dos', tr: 'Sırt', es: 'Espalda', 'ar-sy': 'Ẓahr', zh: 'Bèi' } },
+    { id: 'bone', categoryId: 'body', image: '/assets/bone.webp', emoji: '☠️', translations: { de: 'Knochen', pinz: 'Knochn', en: 'Bone', it: 'Osso', fr: 'Os', tr: 'Kemik', es: 'Hueso', 'ar-sy': 'ʿAẓm', zh: 'Gǔtóu' } },
+    { id: 'brain', categoryId: 'body', image: '/assets/brain.webp', emoji: '🧠', translations: { de: 'Gehirn', pinz: 'Hirn', en: 'Brain', it: 'Cervello', fr: 'Cerveau', tr: 'Beyin', es: 'Cerebro', 'ar-sy': 'Dhimāgh', zh: 'Dànǎo' } },
+    { id: 'heart', categoryId: 'body', image: '/assets/heart.webp', emoji: '❤️', translations: { de: 'Herz', pinz: 'Heaz', en: 'Heart', it: 'Cuore', fr: 'Cœur', tr: 'Kalp', es: 'Corazón', 'ar-sy': 'Qalb', zh: 'Xīnzàng' } },
+    { id: 'lips', categoryId: 'body', image: '/assets/lips.webp', emoji: '💋', translations: { de: 'Lippen', pinz: 'Lippn', en: 'Lips', it: 'Labbra', fr: 'Lèvres', tr: 'Dudaklar', es: 'Labios', 'ar-sy': 'Shifāh', zh: 'Zuǐchún' } },
 
     // --- HISTORY (GESCHICHTE) ---
-    {
-        id: 'castle', categoryId: 'history', image: '/assets/castle.webp', emoji: '🏰',
-        translations: { de: 'Burg', pinz: 'Buag', en: 'Castle', it: 'Castello', fr: 'Château', tr: 'Kale', es: 'Castillo', 'ar-sy': 'Qalʿa', zh: 'Chéngbǎo' }
-    },
-    {
-        id: 'knight', categoryId: 'history', image: '/assets/knight.webp', emoji: '⚔️',
-        translations: { de: 'Ritter', pinz: 'Ritta', en: 'Knight', it: 'Cavaliere', fr: 'Chevalier', tr: 'Şövalye', es: 'Caballero', 'ar-sy': 'Fāris', zh: 'Qíshì' }
-    },
-    {
-        id: 'king', categoryId: 'history', image: '/assets/king.webp', emoji: '👑',
-        translations: { de: 'König', pinz: 'Kini', en: 'King', it: 'Re', fr: 'Roi', tr: 'Kral', es: 'Rey', 'ar-sy': 'Malik', zh: 'Guówáng' }
-    },
-    {
-        id: 'dragon', categoryId: 'history', image: '/assets/dragon.webp', emoji: '🐉',
-        translations: { de: 'Drache', pinz: 'Drach', en: 'Dragon', it: 'Drago', fr: 'Dragon', tr: 'Ejderha', es: 'Dragón', 'ar-sy': 'Tinnīn', zh: 'Lóng' }
-    },
-    {
-        id: 'pyramid', categoryId: 'history', image: '/assets/pyramid.webp', emoji: '🔺',
-        translations: { de: 'Pyramide', pinz: 'Pyramide', en: 'Pyramid', it: 'Piramide', fr: 'Pyramide', tr: 'Piramit', es: 'Pirámide', 'ar-sy': 'Haram', zh: 'Jīnzìtǎ' }
-    },
+    { id: 'castle', categoryId: 'history', image: '/assets/castle.webp', emoji: '🏰', translations: { de: 'Burg', pinz: 'Buag', en: 'Castle', it: 'Castello', fr: 'Château', tr: 'Kale', es: 'Castillo', 'ar-sy': 'Qalʿa', zh: 'Chéngbǎo' } },
+    { id: 'knight', categoryId: 'history', image: '/assets/knight.webp', emoji: '⚔️', translations: { de: 'Ritter', pinz: 'Ritta', en: 'Knight', it: 'Cavaliere', fr: 'Chevalier', tr: 'Şövalye', es: 'Caballero', 'ar-sy': 'Fāris', zh: 'Qíshì' } },
+    { id: 'king', categoryId: 'history', image: '/assets/king.webp', emoji: '👑', translations: { de: 'König', pinz: 'Kini', en: 'King', it: 'Re', fr: 'Roi', tr: 'Kral', es: 'Rey', 'ar-sy': 'Malik', zh: 'Guówáng' } },
+    { id: 'queen', categoryId: 'history', image: '/assets/queen.webp', emoji: '👸', translations: { de: 'Königin', pinz: 'Kinis', en: 'Queen', it: 'Regina', fr: 'Reine', tr: 'Kraliçe', es: 'Reina', 'ar-sy': 'Malika', zh: 'Nǚwáng' } },
+    { id: 'dragon', categoryId: 'history', image: '/assets/dragon.webp', emoji: '🐉', translations: { de: 'Drache', pinz: 'Drach', en: 'Dragon', it: 'Drago', fr: 'Dragon', tr: 'Ejderha', es: 'Dragón', 'ar-sy': 'Tinnīn', zh: 'Lóng' } },
+    { id: 'pyramid', categoryId: 'history', image: '/assets/pyramid.webp', emoji: '🔺', translations: { de: 'Pyramide', pinz: 'Pyramide', en: 'Pyramid', it: 'Piramide', fr: 'Pyramide', tr: 'Piramit', es: 'Pirámide', 'ar-sy': 'Haram', zh: 'Jīnzìtǎ' } },
+    { id: 'sword', categoryId: 'history', image: '/assets/sword.webp', emoji: '🗡️', translations: { de: 'Schwert', pinz: 'Schweat', en: 'Sword', it: 'Spada', fr: 'Épée', tr: 'Kılıç', es: 'Espada', 'ar-sy': 'Sayf', zh: 'Jiàn' } },
+    { id: 'shield', categoryId: 'history', image: '/assets/shield.webp', emoji: '🛡️', translations: { de: 'Schild', pinz: 'Schild', en: 'Shield', it: 'Scudo', fr: 'Bouclier', tr: 'Kalkan', es: 'Escudo', 'ar-sy': 'Dirʿ', zh: 'Dùnpái' } },
+    { id: 'crown', categoryId: 'history', image: '/assets/crown.webp', emoji: '👑', translations: { de: 'Krone', pinz: 'Kron', en: 'Crown', it: 'Corona', fr: 'Couronne', tr: 'Taç', es: 'Corona', 'ar-sy': 'Tāj', zh: 'Huángguān' } },
+    { id: 'ghost', categoryId: 'history', image: '/assets/ghost.webp', emoji: '👻', translations: { de: 'Geist', pinz: 'Goast', en: 'Ghost', it: 'Fantasma', fr: 'Fantôme', tr: 'Hayalet', es: 'Fantasma', 'ar-sy': 'Shabaḥ', zh: 'Guǐ' } },
 
     // --- MUSIC (MUSIK) ---
-    {
-        id: 'guitar', categoryId: 'music', image: '/assets/guitar.webp', emoji: '🎸',
-        translations: { de: 'Gitarre', pinz: 'Gitarre', en: 'Guitar', it: 'Chitarra', fr: 'Guitare', tr: 'Gitar', es: 'Guitarra', 'ar-sy': 'Gītār', zh: 'Jítā' }
-    },
-    {
-        id: 'piano', categoryId: 'music', image: '/assets/piano.webp', emoji: '🎹',
-        translations: { de: 'Klavier', pinz: 'Klavia', en: 'Piano', it: 'Pianoforte', fr: 'Piano', tr: 'Piyano', es: 'Piano', 'ar-sy': 'Biyānū', zh: 'Gāngqín' }
-    },
-    {
-        id: 'drum', categoryId: 'music', image: '/assets/drum.webp', emoji: '🥁',
-        translations: { de: 'Trommel', pinz: 'Trommi', en: 'Drum', it: 'Tamburo', fr: 'Tambour', tr: 'Davul', es: 'Tambor', 'ar-sy': 'Ṭabl', zh: 'Gǔ' }
-    },
-    {
-        id: 'microphone', categoryId: 'music', image: '/assets/microphone.webp', emoji: '🎤',
-        translations: { de: 'Singen', pinz: 'Singa', en: 'Singing', it: 'Cantare', fr: 'Chanter', tr: 'Şarkı söylemek', es: 'Cantar', 'ar-sy': 'Ghināʾ', zh: 'Chànggē' }
-    },
+    { id: 'guitar', categoryId: 'music', image: '/assets/guitar.webp', emoji: '🎸', translations: { de: 'Gitarre', pinz: 'Gitarre', en: 'Guitar', it: 'Chitarra', fr: 'Guitare', tr: 'Gitar', es: 'Guitarra', 'ar-sy': 'Gītār', zh: 'Jítā' } },
+    { id: 'piano', categoryId: 'music', image: '/assets/piano.webp', emoji: '🎹', translations: { de: 'Klavier', pinz: 'Klavia', en: 'Piano', it: 'Pianoforte', fr: 'Piano', tr: 'Piyano', es: 'Piano', 'ar-sy': 'Biyānū', zh: 'Gāngqín' } },
+    { id: 'drum', categoryId: 'music', image: '/assets/drum.webp', emoji: '🥁', translations: { de: 'Trommel', pinz: 'Trommi', en: 'Drum', it: 'Tamburo', fr: 'Tambour', tr: 'Davul', es: 'Tambor', 'ar-sy': 'Ṭabl', zh: 'Gǔ' } },
+    { id: 'microphone', categoryId: 'music', image: '/assets/microphone.webp', emoji: '🎤', translations: { de: 'Mikrofon', pinz: 'Mikro', en: 'Microphone', it: 'Microfono', fr: 'Micro', tr: 'Mikrofon', es: 'Micrófono', 'ar-sy': 'Mīkrūfūn', zh: 'Màikèfēng' } },
+    { id: 'violin', categoryId: 'music', image: '/assets/violin.webp', emoji: '🎻', translations: { de: 'Geige', pinz: 'Geig', en: 'Violin', it: 'Violino', fr: 'Violon', tr: 'Keman', es: 'Violín', 'ar-sy': 'Kamān', zh: 'Xiǎotíqín' } },
+    { id: 'trumpet', categoryId: 'music', image: '/assets/trumpet.webp', emoji: '🎺', translations: { de: 'Trompete', pinz: 'Trompetn', en: 'Trumpet', it: 'Tromba', fr: 'Trompette', tr: 'Trompet', es: 'Trompeta', 'ar-sy': 'Būq', zh: 'Xiǎohào' } },
+    { id: 'saxophone', categoryId: 'music', image: '/assets/saxophone.webp', emoji: '🎷', translations: { de: 'Saxophon', pinz: 'Sax', en: 'Saxophone', it: 'Sassofono', fr: 'Saxophone', tr: 'Saksafon', es: 'Saxofón', 'ar-sy': 'Sāksūfūn', zh: 'Sàkèsī' } },
+    { id: 'note', categoryId: 'music', image: '/assets/note.webp', emoji: '🎵', translations: { de: 'Note', pinz: 'Notn', en: 'Note', it: 'Nota', fr: 'Note', tr: 'Nota', es: 'Nota', 'ar-sy': 'Nūṭa', zh: 'Yīnfú' } },
+    { id: 'radio', categoryId: 'music', image: '/assets/radio.webp', emoji: '📻', translations: { de: 'Radio', pinz: 'Radio', en: 'Radio', it: 'Radio', fr: 'Radio', tr: 'Radyo', es: 'Radio', 'ar-sy': 'Rādyū', zh: 'Shōuyīnjī' } },
+    { id: 'singer', categoryId: 'music', image: '/assets/singer.webp', emoji: '👩‍🎤', translations: { de: 'Sänger', pinz: 'Sänga', en: 'Singer', it: 'Cantante', fr: 'Chanteur', tr: 'Şarkıcı', es: 'Cantante', 'ar-sy': 'Mughannī', zh: 'Gēshǒu' } },
 ];
