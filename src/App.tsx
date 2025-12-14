@@ -84,7 +84,7 @@ function App() {
         <div className="flex gap-2 items-center">
           <button
             onClick={() => setShowStickers(true)}
-            className="p-2 rounded-xl text-slate-400 hover:text-banana-500 hover:bg-banana-50 transition-colors mr-2"
+            className="hidden sm:block p-2 rounded-xl text-slate-400 hover:text-banana-500 hover:bg-banana-50 transition-colors mr-2"
             title="Sticker Album"
           >
             <Sticker size={32} weight="duotone" />
