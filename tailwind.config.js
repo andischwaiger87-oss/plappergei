@@ -16,8 +16,9 @@ export default {
           200: '#FFF59D',
           300: '#FFF176',
           400: '#FFEE58',
-          500: '#FFEB3B', // Primary
-          600: '#FDD835',
+          500: '#FDD835', // Darker Primary (was FFEB3B) for better white text contrast if needed, or keeping it bright but using 600 for text
+          600: '#FBC02D', // Darker for text/borders
+          700: '#F9A825', // Even darker
         },
         sky: {
           400: '#38BDF8', // Secondary

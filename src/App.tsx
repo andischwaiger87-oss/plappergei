@@ -76,7 +76,7 @@ function App() {
             </button>
           )}
 
-          <h1 className="text-2xl font-display font-black text-banana-500 tracking-tight cursor-pointer select-none" onClick={() => setSelectedCategoryId(null)}>
+          <h1 className="text-2xl font-display font-black text-banana-600 tracking-tight cursor-pointer select-none" onClick={() => setSelectedCategoryId(null)}>
             Plapper<span className="text-sky-400">gei</span> 🦜
           </h1>
         </div>

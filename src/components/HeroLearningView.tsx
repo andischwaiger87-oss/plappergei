@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { } from 'react';
 import type { VocabItem } from '../data/vocab';
 import type { LanguageId } from '../data/languages';
-import { SpeakerHigh, ArrowsLeftRight } from '@phosphor-icons/react';
+import { SpeakerHigh } from '@phosphor-icons/react';
 import { audioEngine } from '../utils/audio';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
     item: VocabItem;
@@ -14,7 +14,6 @@ interface Props {
 }
 
 export function HeroLearningView({ item, primaryLang, secondaryLang }: Props) {
-    const [showComparison, setShowComparison] = useState(false);
 
     const playPrimary = () => {
         audioEngine.play(item.translations[primaryLang], primaryLang, item.audio?.[primaryLang]);
@@ -48,41 +47,27 @@ export function HeroLearningView({ item, primaryLang, secondaryLang }: Props) {
                 </button>
             </motion.div>
 
-            {/* Text & comparison */}
-            <div className="w-full text-center space-y-6">
+            {/* Text & comparison - Always visible for 'Muttersprache' impact */}
+            <div className="w-full text-center space-y-4">
                 <motion.div>
                     <h2 className="text-5xl font-display font-black text-slate-800 mb-2">
                         {item.translations[primaryLang]}
                     </h2>
                 </motion.div>
 
-                <AnimatePresence>
-                    {showComparison && (
-                        <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: 'auto' }}
-                            exit={{ opacity: 0, height: 0 }}
-                            className="bg-sky-50 rounded-2xl p-4 border-2 border-sky-100 cursor-pointer"
-                            onClick={playSecondary}
-                        >
-                            <div className="text-sky-500 font-bold mb-1 text-sm uppercase tracking-wider">
-                                Deine Sprache
-                            </div>
-                            <div className="text-3xl font-display font-bold text-sky-900 flex items-center justify-center gap-3">
-                                {item.translations[secondaryLang]}
-                                <SpeakerHigh size={24} className="text-sky-400" />
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
+                {/* Secondary Language (Mother Tongue) - Always visible if different/valid */}
+                {primaryLang !== secondaryLang && (
+                    <motion.div
+                        className="bg-white/50 rounded-2xl p-2 cursor-pointer hover:bg-white transition-colors border border-transparent hover:border-banana-200"
+                        onClick={playSecondary}
+                    >
 
-                <button
-                    onClick={() => setShowComparison(!showComparison)}
-                    className="flex items-center justify-center gap-2 mx-auto text-slate-400 font-bold hover:text-slate-600 transition-colors py-2 px-4 rounded-xl hover:bg-slate-100"
-                >
-                    <ArrowsLeftRight size={20} />
-                    {showComparison ? 'Vergleich ausblenden' : 'Vergleichen'}
-                </button>
+                        <div className="text-3xl font-display font-bold text-sky-600/80 flex items-center justify-center gap-3">
+                            {item.translations[secondaryLang]}
+                            <SpeakerHigh size={24} className="text-sky-400 opacity-50" />
+                        </div>
+                    </motion.div>
+                )}
             </div>
         </div>
     );

@@ -57,6 +57,22 @@ export const VOCAB_ITEMS: VocabItem[] = [
         translations: { de: 'Käse', pinz: 'Kas', en: 'Cheese', it: 'Formaggio', fr: 'Fromage', tr: 'Peynir', es: 'Queso', 'ar-sy': 'Jibn', zh: 'Nǎilào' }
     },
     {
+        id: 'potato', categoryId: 'food', image: '/assets/potato.webp', emoji: '🥔',
+        translations: { de: 'Kartoffel', pinz: 'Eadepfi', en: 'Potato', it: 'Patata', fr: 'Pomme de terre', tr: 'Patates', es: 'Patata', 'ar-sy': 'Baṭāṭā', zh: 'Tǔdòu' }
+    },
+    {
+        id: 'carrot', categoryId: 'food', image: '/assets/carrot.webp', emoji: '🥕',
+        translations: { de: 'Karotte', pinz: 'Gelbarübn', en: 'Carrot', it: 'Carota', fr: 'Carotte', tr: 'Havuç', es: 'Zanahoria', 'ar-sy': 'Jazar', zh: 'Húluóbo' }
+    },
+    {
+        id: 'corn', categoryId: 'food', image: '/assets/corn.webp', emoji: '🌽',
+        translations: { de: 'Mais', pinz: 'Kukuruz', en: 'Corn', it: 'Mais', fr: 'Maïs', tr: 'Mısır', es: 'Maíz', 'ar-sy': 'Dhurra', zh: 'Yùmǐ' }
+    },
+    {
+        id: 'cheese', categoryId: 'food', image: '/assets/cheese.webp', emoji: '🧀',
+        translations: { de: 'Käse', pinz: 'Kas', en: 'Cheese', it: 'Formaggio', fr: 'Fromage', tr: 'Peynir', es: 'Queso', 'ar-sy': 'Jibn', zh: 'Nǎilào' }
+    },
+    {
         id: 'strawberry', categoryId: 'food', image: '/assets/strawberry.webp', emoji: '🍓',
         translations: { de: 'Erdbeere', pinz: 'Eadbea', en: 'Strawberry', it: 'Fragola', fr: 'Fraise', tr: 'Çilek', es: 'Fresa', 'ar-sy': 'Frawla', zh: 'Cǎoméi' }
     },
@@ -77,6 +93,14 @@ export const VOCAB_ITEMS: VocabItem[] = [
     {
         id: 'cow', categoryId: 'animals', image: '/assets/cow.webp', emoji: '🐮',
         translations: { de: 'Kuh', pinz: 'Kua', en: 'Cow', it: 'Mucca', fr: 'Vache', tr: 'İnek', es: 'Vaca', 'ar-sy': 'Baqara', zh: 'Niú' }
+    },
+    {
+        id: 'horse', categoryId: 'animals', image: '/assets/horse.webp', emoji: '🐴',
+        translations: { de: 'Pferd', pinz: 'Ressl', en: 'Horse', it: 'Cavallo', fr: 'Cheval', tr: 'At', es: 'Caballo', 'ar-sy': 'Ḥiṣān', zh: 'Mǎ' }
+    },
+    {
+        id: 'chicken', categoryId: 'animals', image: '/assets/chicken.webp', emoji: '🐔',
+        translations: { de: 'Huhn', pinz: 'Hendl', en: 'Chicken', it: 'Pollo', fr: 'Poulet', tr: 'Tavuk', es: 'Pollo', 'ar-sy': 'Dajāja', zh: 'Jī' }
     },
     {
         id: 'pig', categoryId: 'animals', image: '/assets/pig.webp', emoji: '🐷',
@@ -167,6 +191,14 @@ export const VOCAB_ITEMS: VocabItem[] = [
     {
         id: 'train', categoryId: 'vehicles', image: '/assets/train.webp', emoji: '🚂',
         translations: { de: 'Zug', pinz: 'Zug', en: 'Train', it: 'Treno', fr: 'Train', tr: 'Tren', es: 'Tren', 'ar-sy': 'Qiṭār', zh: 'Huǒchē' }
+    },
+    {
+        id: 'boat', categoryId: 'vehicles', image: '/assets/boat.webp', emoji: '⛵',
+        translations: { de: 'Boot', pinz: 'Boot', en: 'Boat', it: 'Barca', fr: 'Bateau', tr: 'Tekne', es: 'Barco', 'ar-sy': 'Qārib', zh: 'Chuán' }
+    },
+    {
+        id: 'helicopter', categoryId: 'vehicles', image: '/assets/helicopter.webp', emoji: '🚁',
+        translations: { de: 'Hubschrauber', pinz: 'Helikopta', en: 'Helicopter', it: 'Elicottero', fr: 'Hélicoptère', tr: 'Helikopter', es: 'Helicóptero', 'ar-sy': 'Mirwaḥiyya', zh: 'Zhíshēngjī' }
     },
     {
         id: 'tractor', categoryId: 'vehicles', image: '/assets/tractor.webp', emoji: '🚜',
