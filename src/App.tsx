@@ -58,7 +58,9 @@ function App() {
       {/* Overlays */}
       {showAdmin && <AdminView onClose={() => setShowAdmin(false)} />}
       {showStickers && <StickerAlbumView onClose={() => setShowStickers(false)} />}
-      <StickerUnlockNotification show={!!showUnlockId} onComplete={() => setShowUnlockId(null)} />
+      <div className="hidden sm:block">
+        <StickerUnlockNotification show={!!showUnlockId} onComplete={() => setShowUnlockId(null)} />
+      </div>
 
       {/* Header */}
       <header className="px-4 py-3 flex flex-wrap gap-4 justify-between items-center bg-white/80 backdrop-blur-md shadow-sm z-30 sticky top-0 border-b border-slate-100">
