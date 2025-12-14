@@ -13,7 +13,7 @@ import { ProgressManager } from './utils/progress';
 function App() {
   // State
   const [primaryLang, setPrimaryLang] = useState<LanguageId>('de');
-  const [secondaryLang, setSecondaryLang] = useState<LanguageId>('pinz');
+  const [secondaryLang, setSecondaryLang] = useState<LanguageId>('en');
 
   // Navigation State
   const [selectedCategoryId, setSelectedCategoryId] = useState<string | null>(null);
@@ -92,12 +92,12 @@ function App() {
 
           <div className="hidden sm:flex gap-2">
             <LanguageSelector
-              label="Lernen"
+              label="🎓 Lernen"
               current={primaryLang}
               onChange={setPrimaryLang}
             />
             <LanguageSelector
-              label="Muttersprache"
+              label="🏠 Muttersprache"
               current={secondaryLang}
               onChange={setSecondaryLang}
             />
@@ -115,14 +115,14 @@ function App() {
       </header>
 
       {/* Mobile Language Selector (stacked below header on very small screens) */}
-      <div className="sm:hidden px-4 py-2 flex gap-2 justify-center bg-white border-b border-slate-50">
+      <div className="sm:hidden px-4 py-1 flex gap-2 justify-center bg-white border-b border-slate-50">
         <LanguageSelector
-          label="Lernen"
+          label="🎓 Lernen"
           current={primaryLang}
           onChange={setPrimaryLang}
         />
         <LanguageSelector
-          label="Muttersprache"
+          label="🏠 Muttersprache"
           current={secondaryLang}
           onChange={setSecondaryLang}
         />
@@ -141,7 +141,7 @@ function App() {
           // View: Learning Interface
           <div className="w-full flex flex-col items-center animate-pop">
             <div className={`mb-8 px-6 py-2 rounded-full ${currentCategory?.color} font-bold uppercase tracking-widest text-sm`}>
-              {currentCategory?.label[primaryLang === 'en' ? 'en' : 'de']}
+              {currentCategory?.label[primaryLang] || currentCategory?.label['en'] || currentCategory?.label['de']}
             </div>
 
             {filteredItems.length > 0 ? (

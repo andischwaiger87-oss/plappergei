@@ -10,20 +10,20 @@ export interface VocabItem {
 }
 
 export const CATEGORIES = [
-    { id: 'food', icon: '🍎', color: 'bg-rose-100 text-rose-600', label: { de: 'Jause', en: 'Food' } },
-    { id: 'animals', icon: '🐱', color: 'bg-orange-100 text-orange-600', label: { de: 'Tiere', en: 'Animals' } },
-    { id: 'nature', icon: '🌳', color: 'bg-green-100 text-green-600', label: { de: 'Natur', en: 'Nature' } },
-    { id: 'seasons', icon: '🌤️', color: 'bg-blue-100 text-blue-600', label: { de: 'Jahreszeiten', en: 'Seasons' } },
-    { id: 'vehicles', icon: '🚜', color: 'bg-amber-100 text-amber-600', label: { de: 'Fahrzeuge', en: 'Vehicles' } },
-    { id: 'sports', icon: '⚽', color: 'bg-emerald-100 text-emerald-600', label: { de: 'Sport', en: 'Sports' } },
-    { id: 'toys', icon: '🧸', color: 'bg-pink-100 text-pink-600', label: { de: 'Spielzeug', en: 'Toys' } },
-    { id: 'tech', icon: '📱', color: 'bg-sky-100 text-sky-600', label: { de: 'Technik', en: 'Technology' } },
-    { id: 'school', icon: '🎒', color: 'bg-yellow-100 text-yellow-600', label: { de: 'Schule', en: 'School' } },
-    { id: 'home', icon: '🏠', color: 'bg-purple-100 text-purple-600', label: { de: 'Zuhause', en: 'Home' } },
-    { id: 'clothing', icon: '👕', color: 'bg-indigo-100 text-indigo-600', label: { de: 'Kleidung', en: 'Clothing' } },
-    { id: 'body', icon: '👃', color: 'bg-red-100 text-red-600', label: { de: 'Körper', en: 'Body' } },
-    { id: 'history', icon: '🏰', color: 'bg-stone-100 text-stone-600', label: { de: 'Geschichte', en: 'History' } },
-    { id: 'music', icon: '🎸', color: 'bg-fuchsia-100 text-fuchsia-600', label: { de: 'Musik', en: 'Music' } },
+    { id: 'food', icon: '🍎', color: 'bg-rose-100 text-rose-600', label: { de: 'Jause', pinz: 'Jause', en: 'Food', it: 'Cibo', fr: 'Nourriture', tr: 'Yemek', es: 'Comida', 'ar-sy': 'Ṭaʿām', zh: 'Shíwù' } },
+    { id: 'animals', icon: '🐱', color: 'bg-orange-100 text-orange-600', label: { de: 'Tiere', pinz: 'Viecha', en: 'Animals', it: 'Animali', fr: 'Animaux', tr: 'Hayvanlar', es: 'Animales', 'ar-sy': 'Ḥayawānāt', zh: 'Dòngwù' } },
+    { id: 'nature', icon: '🌳', color: 'bg-green-100 text-green-600', label: { de: 'Natur', pinz: 'Natur', en: 'Nature', it: 'Natura', fr: 'Nature', tr: 'Doğa', es: 'Naturaleza', 'ar-sy': 'Ṭabīʿa', zh: 'Zìrán' } },
+    { id: 'seasons', icon: '🌤️', color: 'bg-blue-100 text-blue-600', label: { de: 'Jahreszeiten', pinz: 'Jahreszeiten', en: 'Seasons', it: 'Stagioni', fr: 'Saisons', tr: 'Mevsimler', es: 'Estaciones', 'ar-sy': 'Fuṣūl', zh: 'Jìjié' } },
+    { id: 'vehicles', icon: '🚜', color: 'bg-amber-100 text-amber-600', label: { de: 'Fahrzeuge', pinz: 'Fahrzeuge', en: 'Vehicles', it: 'Veicoli', fr: 'Véhicules', tr: 'Araçlar', es: 'Vehículos', 'ar-sy': 'Markabāt', zh: 'Chēliàng' } },
+    { id: 'sports', icon: '⚽', color: 'bg-emerald-100 text-emerald-600', label: { de: 'Sport', pinz: 'Sport', en: 'Sports', it: 'Sport', fr: 'Sports', tr: 'Spor', es: 'Deportes', 'ar-sy': 'Riyāḍa', zh: 'Yùndòng' } },
+    { id: 'toys', icon: '🧸', color: 'bg-pink-100 text-pink-600', label: { de: 'Spielzeug', pinz: 'Spielzeug', en: 'Toys', it: 'Giocattoli', fr: 'Jouets', tr: 'Oyuncaklar', es: 'Juguetes', 'ar-sy': 'Alʿāb', zh: 'Wánjù' } },
+    { id: 'tech', icon: '📱', color: 'bg-sky-100 text-sky-600', label: { de: 'Technik', pinz: 'Technik', en: 'Tech', it: 'Tecnologia', fr: 'Technologie', tr: 'Teknoloji', es: 'Tecnología', 'ar-sy': 'Tiknūlūjiyā', zh: 'Kējì' } },
+    { id: 'school', icon: '🎒', color: 'bg-yellow-100 text-yellow-600', label: { de: 'Schule', pinz: 'Schui', en: 'School', it: 'Scuola', fr: 'École', tr: 'Okul', es: 'Escuela', 'ar-sy': 'Madrasa', zh: 'Xuéxiào' } },
+    { id: 'home', icon: '🏠', color: 'bg-purple-100 text-purple-600', label: { de: 'Zuhause', pinz: 'Dahoam', en: 'Home', it: 'Casa', fr: 'Maison', tr: 'Ev', es: 'Casa', 'ar-sy': 'Manzil', zh: 'Jiā' } },
+    { id: 'clothing', icon: '👕', color: 'bg-indigo-100 text-indigo-600', label: { de: 'Kleidung', pinz: 'Gwond', en: 'Clothing', it: 'Abbigliamento', fr: 'Vêtements', tr: 'Giyim', es: 'Ropa', 'ar-sy': 'Malābis', zh: 'Yīfu' } },
+    { id: 'body', icon: '👃', color: 'bg-red-100 text-red-600', label: { de: 'Körper', pinz: 'Körper', en: 'Body', it: 'Corpo', fr: 'Corps', tr: 'Vücut', es: 'Cuerpo', 'ar-sy': 'Jism', zh: 'Shēntǐ' } },
+    { id: 'history', icon: '🏰', color: 'bg-stone-100 text-stone-600', label: { de: 'Geschichte', pinz: 'Gschicht', en: 'History', it: 'Storia', fr: 'Histoire', tr: 'Tarih', es: 'Historia', 'ar-sy': 'Tārīkh', zh: 'Lìshǐ' } },
+    { id: 'music', icon: '🎸', color: 'bg-fuchsia-100 text-fuchsia-600', label: { de: 'Musik', pinz: 'Musi', en: 'Music', it: 'Musica', fr: 'Musique', tr: 'Müzik', es: 'Música', 'ar-sy': 'Mūsīqā', zh: 'Yīnyuè' } },
 ];
 
 export const VOCAB_ITEMS: VocabItem[] = [

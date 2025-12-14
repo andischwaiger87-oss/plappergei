@@ -50,7 +50,7 @@ export function HeroLearningView({ item, primaryLang, secondaryLang }: Props) {
             {/* Text & comparison - Always visible for 'Muttersprache' impact */}
             <div className="w-full text-center space-y-4">
                 <motion.div>
-                    <h2 className="text-5xl font-display font-black text-slate-800 mb-2">
+                    <h2 className="text-5xl font-display font-black text-slate-800 mb-2" lang={primaryLang}>
                         {item.translations[primaryLang]}
                     </h2>
                 </motion.div>
@@ -62,7 +62,7 @@ export function HeroLearningView({ item, primaryLang, secondaryLang }: Props) {
                         onClick={playSecondary}
                     >
 
-                        <div className="text-3xl font-display font-bold text-sky-600/80 flex items-center justify-center gap-3">
+                        <div className="text-3xl font-display font-bold text-sky-600/80 flex items-center justify-center gap-3" lang={secondaryLang}>
                             {item.translations[secondaryLang]}
                             <SpeakerHigh size={24} className="text-sky-400 opacity-50" />
                         </div>

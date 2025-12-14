@@ -36,7 +36,7 @@ export function LanguageSelector({ current, onChange, label }: Props) {
 
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 bg-white border-2 border-slate-200 hover:border-banana-400 text-slate-800 font-bold text-lg rounded-2xl px-3 py-2 shadow-sm transition-all w-full min-w-[160px]"
+                className="flex items-center gap-2 bg-white border-2 border-slate-200 hover:border-banana-400 text-slate-800 font-bold text-lg rounded-2xl px-3 py-2 shadow-sm transition-all w-full md:min-w-[160px] min-w-0"
             >
                 <span className="text-3xl leading-none filter drop-shadow-sm">{currentLang?.flag}</span>
                 <span className="flex-1 text-left truncate">{currentLang?.name}</span>
@@ -61,8 +61,8 @@ export function LanguageSelector({ current, onChange, label }: Props) {
                                         setIsOpen(false);
                                     }}
                                     className={`w-full flex items-center gap-3 px-3 py-3 rounded-xl transition-colors ${current === lang.id
-                                            ? 'bg-banana-50 text-banana-900'
-                                            : 'hover:bg-slate-50 text-slate-700'
+                                        ? 'bg-banana-50 text-banana-900'
+                                        : 'hover:bg-slate-50 text-slate-700'
                                         }`}
                                 >
                                     <span className="text-3xl leading-none filter drop-shadow-sm">{lang.flag}</span>

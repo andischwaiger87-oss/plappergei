@@ -11,10 +11,10 @@ export function StickerUnlockNotification({ show, onComplete }: Props) {
         <AnimatePresence onExitComplete={onComplete}>
             {show && (
                 <motion.div
-                    initial={{ y: 100, opacity: 0, scale: 0.5 }}
+                    initial={{ y: -100, opacity: 0, scale: 0.5 }}
                     animate={{ y: 0, opacity: 1, scale: 1 }}
-                    exit={{ y: 50, opacity: 0, scale: 0.8 }}
-                    className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white rounded-2xl shadow-card-hover p-4 flex items-center gap-4 border-4 border-banana-200"
+                    exit={{ y: -50, opacity: 0, scale: 0.8 }}
+                    className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-white/95 backdrop-blur rounded-2xl shadow-card-hover p-4 flex items-center gap-4 border-2 border-banana-200 w-[90%] max-w-sm"
                 >
                     <div className="bg-banana-100 p-3 rounded-full text-banana-500">
                         <Sticker size={32} weight="fill" />

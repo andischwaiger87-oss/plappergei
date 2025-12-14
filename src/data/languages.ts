@@ -9,7 +9,6 @@ export interface Language {
 
 export const LANGUAGES: Language[] = [
     { id: 'de', name: 'Deutsch', flag: '🇦🇹' },
-    { id: 'pinz', name: 'Pinzgauerisch', flag: '🏔️', isDialect: true },
     { id: 'en', name: 'English', flag: '🇬🇧' },
     { id: 'it', name: 'Italiano', flag: '🇮🇹' },
     { id: 'fr', name: 'Français', flag: '🇫🇷' },

@@ -26,7 +26,7 @@ export function CategoryGrid({ currentLang, onSelectCategory }: Props) {
 
     const handleCategoryClick = (cat: typeof CATEGORIES[0]) => {
         // Play audio (Category Name)
-        const label = cat.label[currentLang === 'en' ? 'en' : 'de'];
+        const label = cat.label[currentLang] || cat.label['en'] || cat.label['de'];
         audioEngine.play(label, currentLang);
 
         // Navigate immediately (Audio persists in background usually)
@@ -57,8 +57,8 @@ export function CategoryGrid({ currentLang, onSelectCategory }: Props) {
                         <div className="text-6xl mb-2 drop-shadow-md transform group-hover:scale-110 transition-transform duration-300">
                             {cat.icon}
                         </div>
-                        <span className="font-display font-bold text-lg md:text-xl tracking-tight">
-                            {cat.label[currentLang === 'en' ? 'en' : 'de']}
+                        <span className="font-display font-bold text-lg md:text-xl tracking-tight text-center">
+                            {cat.label[currentLang] || cat.label['en'] || cat.label['de']}
                         </span>
 
                         {/* Shine effect */}
