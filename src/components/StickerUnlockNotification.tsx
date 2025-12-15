@@ -14,7 +14,7 @@ export function StickerUnlockNotification({ show, onComplete }: Props) {
                     initial={{ x: 100, opacity: 0, scale: 0.5 }}
                     animate={{ x: 0, opacity: 1, scale: 1 }}
                     exit={{ x: 50, opacity: 0, scale: 0.8 }}
-                    className="fixed top-4 right-4 z-50 bg-white/95 backdrop-blur rounded-2xl shadow-card-hover p-3 flex items-center gap-3 border-2 border-banana-200 max-w-xs"
+                    className="fixed bottom-4 right-4 z-50 bg-white/95 backdrop-blur rounded-2xl shadow-card-hover p-3 flex items-center gap-3 border-2 border-banana-200 max-w-xs"
                 >
                     <div className="bg-banana-100 p-3 rounded-full text-banana-500">
                         <Sticker size={32} weight="fill" />
