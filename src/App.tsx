@@ -5,6 +5,7 @@ import { LanguageSelector } from './components/LanguageSelector';
 import { AdminView } from './components/AdminView';
 import { StickerAlbumView } from './components/StickerAlbumView';
 import { StickerUnlockNotification } from './components/StickerUnlockNotification';
+import { IntroScreen } from './components/IntroScreen'; // <--- NEU: Import
 import { VOCAB_ITEMS, CATEGORIES } from './data/vocab';
 import type { LanguageId } from './data/languages';
 import { ArrowLeft, Gear, Sticker } from '@phosphor-icons/react';
@@ -12,6 +13,7 @@ import { ProgressManager } from './utils/progress';
 
 function App() {
   // State
+  const [showIntro, setShowIntro] = useState(true); // <--- NEU: Intro State
   const [primaryLang, setPrimaryLang] = useState<LanguageId>('de');
   const [secondaryLang, setSecondaryLang] = useState<LanguageId>('en');
 
@@ -54,6 +56,9 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-900 selection:bg-banana-200">
+
+      {/* NEU: Intro Screen Overlay */}
+      {showIntro && <IntroScreen onFinish={() => setShowIntro(false)} />}
 
       {/* Overlays */}
       {showAdmin && <AdminView onClose={() => setShowAdmin(false)} />}
