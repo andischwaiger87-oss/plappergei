@@ -1,4 +1,4 @@
-export type LanguageId = 'de' | 'pinz' | 'en' | 'it' | 'fr' | 'tr' | 'es' | 'ar-sy' | 'zh';
+export type LanguageId = 'de' | 'pinz' | 'en' | 'it' | 'fr' | 'tr' | 'es' | 'ar' | 'zh';
 
 export interface Language {
     id: LanguageId;
@@ -14,6 +14,7 @@ export const LANGUAGES: Language[] = [
     { id: 'fr', name: 'Français', flag: '🇫🇷' },
     { id: 'tr', name: 'Türkçe', flag: '🇹🇷' },
     { id: 'es', name: 'Español', flag: '🇪🇸' },
-    { id: 'ar-sy', name: 'Syrisch', flag: '🇸🇾' },
+    { id: 'ar', name: 'Arabisch', flag: '🇸🇦' },
     { id: 'zh', name: 'Chinesisch', flag: '🇨🇳' },
 ];
+

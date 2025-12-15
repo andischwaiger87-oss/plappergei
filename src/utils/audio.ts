@@ -6,6 +6,19 @@ const ELEVENLABS_API_URL = 'https://api.elevenlabs.io/v1/text-to-speech';
 // Multilingual v2 voice - works for all languages
 const DEFAULT_VOICE_ID = '21m00Tcm4TlvDq8ikWAM'; // "Rachel" - clear, natural voice
 
+// ISO 639-1 language codes for ElevenLabs
+const ELEVENLABS_LANG_MAP: Record<string, string> = {
+    de: 'de',
+    pinz: 'de', // Austrian German
+    en: 'en',
+    it: 'it',
+    fr: 'fr',
+    tr: 'tr',
+    es: 'es',
+    ar: 'ar',
+    zh: 'zh',
+};
+
 // Cache for generated audio (localStorage)
 const AUDIO_CACHE_PREFIX = 'tts_cache_';
 
@@ -80,6 +93,7 @@ class AudioEngine {
                 body: JSON.stringify({
                     text: text,
                     model_id: 'eleven_multilingual_v2',
+                    language_code: ELEVENLABS_LANG_MAP[langId] || 'en',
                     voice_settings: {
                         stability: 0.5,
                         similarity_boost: 0.75,
@@ -151,7 +165,7 @@ class AudioEngine {
             fr: 'fr-FR',
             tr: 'tr-TR',
             es: 'es-ES',
-            'ar-sy': 'ar-SA',
+            ar: 'ar-SA',
             zh: 'zh-CN',
         };
         utterance.lang = langMap[langId] || 'en-US';
